@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lago de Manzanares">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#132c4c">
+<meta name="description" content="Portal de administración - Club de Campo Lago de Manzanares">
+<title>Lago de Manzanares</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside id="sidebar">
+    <div class="sb-logo">
+      <img class="sb-logo-img" src="assets/images/brand/logo-lago-manzanares.png" alt="Lago de Manzanares">
+    </div>
+    <nav class="sb-nav">
+      <button class="nav-item active" data-s="inicio" title="Inicio"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg><span>Inicio</span></button>
+      <button class="nav-item" data-s="gastos" title="Gastos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Gastos</span></button>
+      <button class="nav-item" data-s="liquidaciones" title="Liquidaciones"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Liquidaciones</span></button>
+      <button class="nav-item" data-s="documentos" title="Comunicados"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg><span>Comunicados</span></button>
+      <button class="nav-item" data-s="pago" title="Datos de Pago"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg><span>Datos de Pago</span></button>
+      <button class="nav-item" data-s="contacto" title="Contacto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.89.66 2.78a2 2 0 0 1-.45 2.11L8 9.9a16 16 0 0 0 6.1 6.1l1.29-1.31a2 2 0 0 1 2.11-.45c.89.31 1.82.53 2.78.66A2 2 0 0 1 22 16.9z"/></svg><span>Contacto</span></button>
+    </nav>
+    <div class="sb-footer">
+      <button class="collapse-btn" id="collapse-btn" type="button" title="Ocultar menú" aria-expanded="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg><span>Ocultar menú</span></button>
+      <button class="sb-logout" id="sidebar-reset" type="button" title="Cerrar sesión"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span>Cerrar sesión</span></button>
+    </div>
+  </aside>
+  <div id="sidebar-overlay" aria-hidden="true"></div>
+
+  <main id="app-main">
+    <header id="topbar">
+      <div class="tb-left">
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <span class="tb-page-title" id="tb-page-title">Inicio</span>
+      </div>
+      <div class="tb-pill">
+        <button class="tb-notif" type="button" aria-label="Notificaciones" aria-controls="notif-panel" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 1 0-12 0v3.2a2 2 0 0 1-.6 1.4L4 17h5"/><path d="M10 21a2 2 0 0 0 4 0"/></svg><span class="tb-notif-dot"></span></button>
+        <span class="tb-divider"></span>
+        <div class="tb-user"><div class="tb-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg></div><span class="tb-user-name">Administración</span></div>
+        <div class="notif-panel" id="notif-panel">
+          <div class="notif-head"><div><div class="notif-title">Próximos avisos</div><div class="notif-sub">Seguimiento rápido de la gestión</div></div></div>
+          <div class="notif-list">
+            <div class="notif-item"><div class="notif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div><strong>Próximo vencimiento</strong><span>Gastos administrativos abril 2026. Vencimiento: 15/05/2026 por lote.</span></div></div>
+            <div class="notif-item"><div class="notif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M12 4h9"/><path d="M4 9h16"/><path d="M4 15h16"/><path d="M8 4v16"/></svg></div><div><strong>Liquidación disponible</strong><span>Ya está cargado el detalle completo de abril 2026 con egresos, ingresos y cuenta corriente.</span></div></div>
+            <div class="notif-item"><div class="notif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><strong>Comunicados recientes</strong><span>Hay 6 comunicados activos para consulta de propietarios y seguimiento de obras.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="page-content">
+      <section id="sec-inicio" class="page on">
+        <div class="home-top">
+          <div class="hero-banner">
+            <img class="hero-photo" src="assets/images/hero/hero-lago-apr27.jpeg" alt="Vista de Lago de Manzanares">
+            <div class="hero-text">
+              <h1>Lago de Manzanares</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-action-grid">
+          <button class="card home-action-card" data-go="gastos">
+            <div class="home-action-top"><div><div class="home-action-title">Resumen de Abril</div><div class="home-action-meta">Egresos, ingresos, saldo y detalle administrativo del período.</div></div><span class="tag ok">Cerrado</span></div>
+              <div class="financial-strip">
+                <div class="financial-cell"><div class="financial-label">Egresos</div><div class="financial-value neg" id="home-abril-egresos">$ 35.487.374,28</div></div>
+                <div class="financial-cell"><div class="financial-label">Ingresos</div><div class="financial-value pos" id="home-abril-ingresos">$ 34.110.001,00</div></div>
+                <div class="financial-cell"><div class="financial-label">Saldo</div><div class="financial-value pos" id="home-abril-saldo">$ 176.781,83</div></div>
+              </div>
+            <div class="home-action-foot"><span>Ver gastos administrativos</span><span>→</span></div>
+          </button>
+          <button class="card home-action-card" data-go="liquidaciones">
+            <div class="home-action-top"><div><div class="home-action-title">Próximo Vencimiento</div><div class="home-action-meta">Gastos administrativos de Abril 2026.</div></div><div class="due-badge"><strong>15</strong><span>may</span></div></div>
+            <div><div class="home-action-value">$ 200.000</div><div class="home-action-meta">por lote · Vence 15/05/2026</div></div>
+            <div class="home-action-foot"><span>Abrir liquidación</span><span>→</span></div>
+          </button>
+          <button class="card home-action-card" data-go="documentos">
+            <div class="home-action-top"><div><div class="home-action-title">Últimas Novedades</div><div class="home-action-meta">Comunicados recientes para propietarios.</div></div><span class="tag">Comunicados</span></div>
+            <div class="news-mini-list">
+              <div class="news-mini-item"><div class="news-mini-title">Informe Mensual de Trabajos - Abril 2026</div><div class="news-mini-date">ZANARA · Informe de obras</div></div>
+              <div class="news-mini-item"><div class="news-mini-title">Informe Mensual de Trabajos - Marzo 2026</div><div class="news-mini-date">ZANARA · Informe de obras</div></div>
+            </div>
+            <div class="home-action-foot"><span>Ver comunicados</span><span>→</span></div>
+          </button>
+        </div>
+
+        <div class="home-finance-grid">
+          <div class="mini-chart">
+            <div class="card-hdr"><div><span class="card-title">Evolución financiera de la gestión</span><span class="card-sub">Ingresos y egresos de todos los meses registrados hasta la fecha</span></div></div>
+            <div class="chart-wrap"><canvas id="chart-line" height="235"></canvas></div>
+            <div class="chart-insights">
+              <div class="chart-insight"><span>Total egresos</span><strong id="home-total-egresos">$ 142.843.219,07</strong></div>
+              <div class="chart-insight"><span>Total ingresos</span><strong id="home-total-ingresos">$ 143.020.001,00</strong></div>
+              <div class="chart-insight"><span>Saldo acumulado</span><strong id="home-saldo-acumulado">$ 176.781,83</strong></div>
+              <div class="chart-insight"><span>Lotes al día</span><strong id="home-lotes-dia">58 / 219</strong></div>
+            </div>
+            <div class="home-data-table">
+              <table class="data-table">
+                <thead><tr><th>Mes</th><th class="num">Ingresos</th><th class="num">Egresos</th><th class="num">Saldo</th></tr></thead>
+                <tbody id="home-trend-table-body">
+                  <tr><td>Diciembre 2025</td><td class="num">$ 6.300.000,00</td><td class="num">$ 6.529.178,07</td><td class="num">-$ 229.178,07</td></tr>
+                  <tr><td>Enero 2026</td><td class="num">$ 31.500.000,00</td><td class="num">$ 30.609.049,35</td><td class="num">$ 661.772,58</td></tr>
+                  <tr><td>Febrero 2026</td><td class="num">$ 34.010.000,00</td><td class="num">$ 34.665.404,83</td><td class="num">$ 6.367,65</td></tr>
+                  <tr><td>Marzo 2026</td><td class="num">$ 37.100.000,00</td><td class="num">$ 35.552.212,54</td><td class="num">$ 1.554.155,11</td></tr>
+                  <tr><td>Abril 2026</td><td class="num">$ 34.110.001,00</td><td class="num">$ 35.487.374,28</td><td class="num">$ 176.781,83</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="mini-chart">
+            <div class="card-hdr"><div><span class="card-title">Composición de egresos</span><span class="card-sub">Abril 2026 por concepto</span></div></div>
+            <div class="chart-wrap"><canvas id="chart-bar" height="235"></canvas></div>
+            <div class="expense-breakdown" id="home-expense-breakdown">
+              <div class="breakdown-row"><div class="breakdown-name">Mantenimiento</div><div class="breakdown-value">$ 20.132.293,97 · 56,7%</div><div class="breakdown-bar"><span style="width:56.7%"></span></div></div>
+              <div class="breakdown-row"><div class="breakdown-name">Sueldos</div><div class="breakdown-value">$ 13.535.800,00 · 38,1%</div><div class="breakdown-bar"><span style="width:38.1%"></span></div></div>
+              <div class="breakdown-row"><div class="breakdown-name">Otros</div><div class="breakdown-value">$ 836.719,49 · 2,4%</div><div class="breakdown-bar"><span style="width:2.4%"></span></div></div>
+              <div class="breakdown-row"><div class="breakdown-name">Servicios</div><div class="breakdown-value">$ 754.942,78 · 2,1%</div><div class="breakdown-bar"><span style="width:2.1%"></span></div></div>
+              <div class="breakdown-row"><div class="breakdown-name">Monotributo</div><div class="breakdown-value">$ 172.033,64 · 0,5%</div><div class="breakdown-bar"><span style="width:.5%"></span></div></div>
+              <div class="breakdown-row"><div class="breakdown-name">Seguros</div><div class="breakdown-value">$ 55.584,40 · 0,2%</div><div class="breakdown-bar"><span style="width:.2%"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-gastos" class="page">
+        <div class="page-header"><div><h1 class="page-title">Gastos Administrativos</h1><p class="page-sub">Cartas mensuales enviadas a propietarios</p></div></div>
+        <div id="gastos-letters"></div>
+      </section>
+
+      <section id="sec-liquidaciones" class="page">
+        <div class="page-header"><div><h1 class="page-title">Liquidaciones</h1><p class="page-sub">Detalle mensual completo y cuenta corriente por lote</p></div></div>
+        <div class="liquid-layout">
+          <div class="liquid-side">
+            <div class="liquid-card-shell">
+              <div class="liquid-section-label" id="cc-section-label">Cuenta Corriente - Abril 2026</div>
+              <div class="cc-widget">
+                <div class="cc-hdr">
+                  <div class="cc-hdr-title" id="cc-period-title">Estado de cuenta por lote · Abril 2026</div>
+                  <div class="cc-hdr-meta" id="cc-period-meta">219 lotes totales</div>
+                </div>
+                <div class="cc-stats">
+                  <div class="cc-stat total"><div class="cc-stat-val" id="cc-total-lotes">219</div><div class="cc-stat-lbl">Total lotes</div></div>
+                  <div class="cc-stat dia"><div class="cc-stat-val" id="cc-total-dia">58</div><div class="cc-stat-lbl">Al día</div></div>
+                  <div class="cc-stat deuda"><div class="cc-stat-val" id="cc-total-deuda">161</div><div class="cc-stat-lbl">Con deuda</div></div>
+                </div>
+                <div class="cc-search"><input type="text" id="cc-search-input" placeholder="Buscar por lote o propietario..."></div>
+                <div class="cc-filter-row">
+                  <button class="cc-filter-btn on" id="ccf-all" data-cc-filter="all">Todos</button>
+                  <button class="cc-filter-btn" id="ccf-dia" data-cc-filter="dia">Al día</button>
+                  <button class="cc-filter-btn" id="ccf-deuda" data-cc-filter="deuda">Con deuda</button>
+                </div>
+                <div class="cc-list" id="cc-list"></div>
+                <button class="cc-toggle-btn" id="cc-toggle">Ver todos los lotes</button>
+                <div class="doc-actions doc-actions-compact" id="cc-doc-actions"></div>
+              </div>
+            </div>
+          </div>
+          <div class="liquid-main">
+            <div class="liquid-card-shell">
+              <div class="liquid-section-label">Liquidaciones Mensuales</div>
+              <div class="mgrid" id="mgrid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-documentos" class="page">
+        <div class="page-header"><div><h1 class="page-title">Comunicados</h1><p class="page-sub">Publicaciones importantes para propietarios</p></div></div>
+        <div class="notice-list" id="notice-grid"></div>
+      </section>
+
+      <section id="sec-pago" class="page">
+        <div class="page-header"><div><h1 class="page-title">Datos de Pago</h1><p class="page-sub">Datos para transferencia bancaria</p></div></div>
+        <div class="payhdr">
+          <h3>Cuenta Club de Campo</h3>
+          <div class="prow"><span>Banco</span><span class="pval">Banco Ciudad</span></div>
+          <div class="prow"><span>CBU</span><span class="pval">0290052010000571246961<button class="cpbtn" data-copy="0290052010000571246961">Copiar</button></span></div>
+          <div class="prow"><span>Alias</span><span class="pval">TRONCO.CIFRA.COATI<button class="cpbtn" data-copy="TRONCO.CIFRA.COATI">Copiar</button></span></div>
+          <div class="psep"></div>
+          <div class="prow"><span>Importe por lote</span><span class="pval">$ 200.000 / mes</span></div>
+          <p class="pmail">Enviar comprobante a <a href="mailto:lagodemanzanares.adm@gmail.com?subject=Comprobante%20de%20pago%20-%20Lago%20de%20Manzanares">lagodemanzanares.adm@gmail.com</a> indicando número de lote.</p>
+        </div>
+        <div class="paynote">
+          <strong>Importante</strong>
+          La continuidad operativa del barrio se financia exclusivamente con el pago de los gastos administrativos mensuales. Abonar en término consignando el número de lote es fundamental para sostener los servicios esenciales.
+        </div>
+      </section>
+
+      <section id="sec-contacto" class="page">
+        <div class="page-header"><div><h1 class="page-title">Contacto</h1><p class="page-sub">Administración y canales de atención</p></div></div>
+        <div class="contact-grid">
+          <div class="contact-card feature">
+            <span class="card-title">Administración Lago de Manzanares</span>
+            <p class="small-muted contact-lead">Canales centralizados para consultas, comprobantes de pago y coordinación administrativa del barrio.</p>
+            <div class="contact-actions">
+              <a class="contact-action whatsapp" href="https://wa.me/5491176462020?text=Hola%2C%20soy%20propietario%20de%20Lago%20de%20Manzanares%20y%20me%20comunico%20para%20consultar." target="_blank" rel="noopener">
+                <span class="contact-action-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.5z"/><path d="M9 9.5c.5 2 2 3.5 4 4l1.2-1.2 2 1c-.3 1.1-1 1.7-2.1 1.7-3.3 0-6.1-2.8-6.1-6.1 0-1.1.6-1.8 1.7-2.1l1 2z"/></svg></span>
+                <span><span class="contact-action-title">Enviar WhatsApp</span><span class="contact-action-sub">+54 11 7646-2020</span></span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+              <a class="contact-action" href="mailto:lagodemanzanares.adm@gmail.com?subject=Consulta%20-%20Lago%20de%20Manzanares">
+                <span class="contact-action-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                <span><span class="contact-action-title">Enviar email</span><span class="contact-action-sub">lagodemanzanares.adm@gmail.com</span></span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+              <a class="contact-action phone" href="tel:+5491176462020">
+                <span class="contact-action-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.1 2h3"/></svg></span>
+                <span><span class="contact-action-title">Llamar</span><span class="contact-action-sub">Atención administrativa</span></span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-side">
+            <div class="contact-info-card">
+              <span class="card-title">Datos de referencia</span>
+              <div class="info-list">
+                <div class="info-row"><span>Email</span><strong>lagodemanzanares.adm@gmail.com</strong></div>
+                <div class="info-row"><span>WhatsApp / Teléfono</span><strong>+54 11 7646-2020</strong></div>
+                <div class="info-row"><span>Ubicación</span><strong>Manzanares, Buenos Aires</strong></div>
+                <div class="info-row"><span>Gestión</span><strong>Dic 2025 - Mar 2026</strong></div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <span class="card-title">Ubicación</span>
+              <p class="small-muted" style="margin-top:8px;">Club de Campo Lago de Manzanares, Manzanares, Buenos Aires.</p>
+              <div class="payment-actions" style="margin-top:14px;">
+                <a class="payment-action" href="https://www.google.com/maps/place/LAGO+DE+MANZANARES+-+COUNTRY+CLUB/@-34.4565724,-59.0115297,17z/data=!3m1!4b1!4m6!3m5!1s0x95bc83341db5cc1b:0xe2d5cda0e5d0307d!8m2!3d-34.4565769!4d-59.0089494!16s%2Fg%2F11lcbg724l" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Ver en mapa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<nav id="mobile-nav">
+  <button class="mnb on" data-s="inicio"><span class="mnb-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.25 12 4l8 6.25"/><path d="M6.75 9.75V20h10.5V9.75"/><path d="M10 20v-5.5h4V20"/></svg></span><span>Inicio</span></button>
+  <button class="mnb" data-s="gastos"><span class="mnb-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.75h7l4 4V20a1.25 1.25 0 0 1-1.25 1.25h-9.5A1.25 1.25 0 0 1 6 20V5A1.25 1.25 0 0 1 7.25 3.75Z"/><path d="M14 3.75V8h4"/><path d="M9 11.25h6"/><path d="M9 15.25h6"/></svg></span><span>Gastos</span></button>
+  <button class="mnb" data-s="liquidaciones"><span class="mnb-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M8 3.75V7"/><path d="M16 3.75V7"/><path d="M4 10h16"/><path d="M8 13.25h3"/><path d="M13 13.25h3"/><path d="M8 16.5h8"/></svg></span><span>Liquid.</span></button>
+  <button class="mnb" data-s="documentos"><span class="mnb-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.75h9.25L19 6.5V20a1.25 1.25 0 0 1-1.25 1.25h-10.5A1.25 1.25 0 0 1 6 20V5A1.25 1.25 0 0 1 7.25 3.75Z"/><path d="M16 3.75V7h3"/><path d="M9 11h6"/><path d="M9 14.5h6"/><path d="M9 18h4"/></svg></span><span>Comunicados</span></button>
+  <button class="mnb" data-s="pago"><span class="mnb-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="12" rx="2.5"/><path d="M3.5 10h17"/><path d="M7.5 14.25h3.5"/><path d="M15 14.25h1.5"/></svg></span><span>Pago</span></button>
+  <button class="mnb" data-s="contacto"><span class="mnb-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.7 5.5c.35-.32.9-.36 1.27-.07l1.95 1.53c.38.3.5.82.28 1.25l-.78 1.47c.86 1.53 2.15 2.82 3.68 3.68l1.47-.78c.43-.23.95-.1 1.25.28l1.53 1.95c.29.37.26.92-.07 1.27l-1.08 1.16c-.35.38-.89.56-1.4.47-2.24-.42-4.36-1.61-6.18-3.43-1.82-1.82-3-3.95-3.43-6.18-.1-.51.08-1.05.47-1.4Z"/></svg></span><span>Contacto</span></button>
+</nav>
+
+<div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+<div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+  <div class="image-lightbox-dialog">
+    <button class="image-lightbox-close" id="image-lightbox-close" type="button" aria-label="Cerrar imagen">×</button>
+    <div class="image-lightbox-frame">
+      <img id="image-lightbox-img" src="" alt="">
+    </div>
+    <div class="image-lightbox-caption" id="image-lightbox-caption"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
