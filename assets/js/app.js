@@ -415,6 +415,50 @@ var NOTICES = [
     '</div>'
   },
   {
+    id:'minuta_abr26',
+    title:'Informe de Reunión con Propietarios - Abril 2026',
+    date:'Administración Lago de Manzanares',
+    tag:'Comunicado',
+    pdfHref:'assets/docs/notices/minuta-reunion-propietarios-abril-2026.pdf',
+    desc:'Resumen de la reunión del 25 de abril: gastos administrativos, morosidad, ARBA, obras y seguridad.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Comunicado</span>' +
+      '<p>A continuación compartimos un resumen detallado de los temas abordados en la reunión mantenida el <strong>25 de abril de 2026</strong>, cuyo objetivo principal fue generar un espacio de diálogo directo, reforzar la comunicación con los propietarios y tratar aspectos clave vinculados al funcionamiento y desarrollo del barrio.</p>' +
+      '<div class="notice-section-title">Objetivo de la Reunión</div>' +
+      '<p>Durante el encuentro se hizo especial hincapié en la necesidad de fortalecer los canales de comunicación, dado que se detectó una baja respuesta a las comunicaciones enviadas por correo electrónico. La reunión permitió intercambiar opiniones, aclarar dudas y poner en común la situación actual del barrio.</p>' +
+      '<div class="notice-section-title">Gastos Administrativos y Morosidad</div>' +
+      '<p>Los gastos administrativos actuales están destinados a cubrir servicios comunes: portería, mantenimiento general, consumo de energía eléctrica y seguridad. La recaudación actual resulta insuficiente debido al alto nivel de morosidad existente.</p>' +
+      '<div class="letter-highlight">' +
+        '<strong>Medidas definidas:</strong><br>' +
+        '• Se avanzará en la actualización de la base de datos de contacto.<br>' +
+        '• Se intensificará el contacto individual con propietarios para regularizar la situación.<br>' +
+        '• A partir de <strong>mayo de 2026</strong> se aplicarán intereses por mora sobre los saldos impagos.<br>' +
+        '• Una vez agotadas las instancias de diálogo, se evaluará el inicio de <strong>acciones legales</strong> contra los propietarios morosos.<br><br>' +
+        '<strong>Regularización:</strong> El pago equivalente a 24 meses calculados a valores de noviembre de 2025 (total: $2.400.000) permite normalizar deudas acumuladas en años anteriores.' +
+      '</div>' +
+      '<div class="notice-section-title">ARBA</div>' +
+      '<p>La mayoría de los lotes de la Zona Norte ya cuentan con su partida individual ante ARBA. El incumplimiento en el pago puede derivar en acciones judiciales, embargos e inconvenientes al momento de escriturar. En el próximo resumen de gastos administrativos se adjuntará un listado con las partidas correspondientes a cada lote.</p>' +
+      '<div class="notice-section-title">Obras y Avances</div>' +
+      '<table class="notice-table"><thead><tr><th>Zona</th><th>Avances</th></tr></thead><tbody>' +
+        '<tr><td><strong>Zona Norte</strong></td><td>Edenor está realizando una revisión del sistema eléctrico con reemplazo de cajas deterioradas. Se avanzará en la mejora de tensión e instalación de luminarias LED.</td></tr>' +
+        '<tr><td><strong>Zona Sur</strong></td><td>Continúan las tareas de desmonte (finalización estimada: 1 mes). Luego se avanzará con limpieza y preparación del terreno. Sector con mayores dificultades por zonas inundables y cercanía al río Luján.</td></tr>' +
+      '</tbody></table>' +
+      '<div class="notice-section-title">Infraestructura y Seguridad</div>' +
+      '<p><strong>Infraestructura:</strong> La infraestructura del barrio se encuentra operativa en términos generales. Se identificaron tramos de cañerías dañadas a reparar y necesidad de mantenimiento en la planta de tratamiento.</p>' +
+      '<p><strong>Seguridad:</strong> Se logró una disminución en los episodios de intrusión. A partir de mayo se reducirá el servicio policial (se mantiene únicamente el móvil nocturno). Se continúa consolidando el cerco perimetral con obstáculos naturales en sectores vulnerables.</p>' +
+      '<div class="notice-section-title">Desarrollo y Obras Futuras</div>' +
+      '<div class="letter-highlight">' +
+        '• <strong>Zona Norte:</strong> posible escrituración durante el primer semestre del próximo año.<br>' +
+        '• <strong>Zona Sur:</strong> plazo estimado de desarrollo entre 18 y 24 meses.<br>' +
+        '• Se prevé rediseño del acceso al barrio con propuesta más amplia y moderna.<br>' +
+        '• Club House en etapa de planificación, sujeto a aprobaciones municipales.' +
+      '</div>' +
+      '<div class="notice-section-title">Convivencia y Reglamentación</div>' +
+      '<p>Se abordaron problemáticas vinculadas a la convivencia, principalmente el exceso de velocidad. Se evaluará la implementación de multas. Se comenzará a trabajar en la actualización del reglamento de convivencia.</p>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
+  {
     id:'cavance26',
     title:'Informe Mensual de Trabajos - Marzo 2026',
     date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
