@@ -1440,22 +1440,6 @@ function bindInteractions(){
       cp(btn.getAttribute('data-copy'), btn);
     });
   });
-  // Fix mailto links: explicit handler for PWA/mobile compatibility
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(link){
-    link.addEventListener('click', function(e){
-      e.preventDefault();
-      var href = link.getAttribute('href');
-      var email = href.replace(/^mailto:/,'').split('?')[0];
-      try {
-        window.location.href = href;
-        window.setTimeout(function(){
-          showToast('Abrir email', email);
-        }, 400);
-      } catch(err){
-        cp(email, link);
-      }
-    });
-  });
   var collapse = document.getElementById('collapse-btn');
   if (collapse) collapse.addEventListener('click', function(){
     document.body.classList.toggle('sidebar-collapsed');
