@@ -33,11 +33,14 @@ var LIQUIDACIONES = [
     bodyHtml:'<div class="letter-content">' +
       '<div class="letter-kicker">Estimados propietarios:</div>' +
       '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de mayo de 2026, con vencimiento el día 15 de junio de 2026.</p>' +
-      '<p>En los archivos adjuntos encontrarán la siguiente documentación: liquidación correspondiente al período mayo 2026, estado de cuenta de cada lote e informe actualizado sobre los avances de obra.</p>' +
-      '<div class="letter-highlight"><strong>Importe Mayo 2026</strong>$ 200.000 (pesos doscientos mil) por lote.</div>' +
-      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria - <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
-      '<div class="letter-highlight"><strong>Importante</strong>Recordamos que los gastos administrativos mensuales deben ser abonados por todos los propietarios. Los pagos realizados fuera de término generan un interés por mora del 4% mensual, que se aplicará hasta la cancelación total de la deuda.</div>' +
-      '<p>Actualmente, parte de los gastos que no son cubiertos por los propietarios morosos continúan siendo afrontados por el desarrollador. Por tal motivo, solicitamos a quienes registren deuda desde enero del corriente año que regularicen su situación a la brevedad, respetando los vencimientos establecidos para asegurar la continuidad de los servicios comunes.</p>' +
+      '<p>En los archivos adjuntos encontrarán la siguiente documentación:</p>' +
+      '<ul><li>Liquidación correspondiente al período mayo 2026.</li><li>Estado de cuenta de cada lote.</li><li>Informe actualizado sobre los avances de obra.</li></ul>' +
+      '<div class="letter-highlight"><strong>Importe Mayo 2026</strong>$ 200.000 — pesos doscientos mil</div>' +
+      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria — <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
+      '<div class="letter-highlight"><strong>Importante</strong>Recordamos que los gastos administrativos mensuales deben ser abonados por todos los propietarios, ya que son necesarios para cubrir los costos de funcionamiento y mantenimiento del barrio. Los pagos realizados fuera de término generan un interés por mora del 4% mensual, que se aplicará hasta la cancelación total de la deuda.</div>' +
+      '<p>Actualmente, parte de los gastos que no son cubiertos por los propietarios morosos continúan siendo afrontados por el desarrollador. Sin embargo, esta situación no puede mantenerse indefinidamente.</p>' +
+      '<p>Por tal motivo, solicitamos a quienes registren deuda desde enero del corriente año que regularicen su situación a la brevedad. Asimismo, pedimos a todos los propietarios respetar los vencimientos establecidos para evitar mayores atrasos y asegurar la continuidad de los servicios comunes.</p>' +
+      '<p>Ante cualquier consulta, quedamos a disposición.</p>' +
       '<div class="doc-actions"><a class="doc-action primary" href="' + MAY_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
       '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
     '</div>'
