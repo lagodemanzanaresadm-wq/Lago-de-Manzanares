@@ -33,9 +33,11 @@ var LIQUIDACIONES = [
     bodyHtml:'<div class="letter-content">' +
       '<div class="letter-kicker">Estimados propietarios:</div>' +
       '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de mayo de 2026, con vencimiento el día 15 de junio de 2026.</p>' +
-      '<p>En los archivos adjuntos encontrarán la liquidación del período y el estado de cuenta de cada lote.</p>' +
+      '<p>En los archivos adjuntos encontrarán la siguiente documentación: liquidación correspondiente al período mayo 2026, estado de cuenta de cada lote e informe actualizado sobre los avances de obra.</p>' +
       '<div class="letter-highlight"><strong>Importe Mayo 2026</strong>$ 200.000 (pesos doscientos mil) por lote.</div>' +
       '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria - <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
+      '<div class="letter-highlight"><strong>Importante</strong>Recordamos que los gastos administrativos mensuales deben ser abonados por todos los propietarios. Los pagos realizados fuera de término generan un interés por mora del 4% mensual, que se aplicará hasta la cancelación total de la deuda.</div>' +
+      '<p>Actualmente, parte de los gastos que no son cubiertos por los propietarios morosos continúan siendo afrontados por el desarrollador. Por tal motivo, solicitamos a quienes registren deuda desde enero del corriente año que regularicen su situación a la brevedad, respetando los vencimientos establecidos para asegurar la continuidad de los servicios comunes.</p>' +
       '<div class="doc-actions"><a class="doc-action primary" href="' + MAY_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
       '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
     '</div>'
@@ -574,9 +576,60 @@ var NOTICES = [
 
 var MESES = {
   may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
+    saldoInicial:176781.83,
     docs:[
       {label:"Liquidación Mayo 2026 (PDF)",href:MAY_2026_PDFS.liquidacion,primary:true},
       {label:"Estado de cuenta propietarios Mayo 2026 (PDF)",href:MAY_2026_PDFS.estado}
+    ],
+    egresos:{
+      sueldos:{label:"Sueldos y aportes al personal",items:[
+        ["Cano, Rodolfo","Fc. 001-0011",1030000],["Heflein, Gaston","Fc. 001-0005",1060000],
+        ["Jara, Julio E.","Fc. 001-0050",1030000],["Leiva, Miguel Angel","Fc. 001-0088",1900000],
+        ["Falco, Maria F.","Transferencia",3500000],["Guardia policial","Transferencia",1050000]]},
+      monotributo:{label:"Aportes Monotributo",items:[
+        ["Cano, Rodolfo","Monotributo 05-26",42386.74],["Heflein, Gaston","Monotributo 05-26",30758.31],
+        ["Jara, Julio E.","Monotributo 05-26",42386.74],["Leiva, Miguel Angel","Monotributo 05-26",56501.85]]},
+      seguros:{label:"Seguros",items:[
+        ["Seguro Responsabilidad Civil 5/11","Poliza nro. 271754",55584.40],
+        ["Seguro Accidentes Personales 1/2","Poliza nro. 10455954",36931.00]]},
+      mantenimientos:{label:"Abonos por mantenimientos",items:[
+        ["Mantenimiento parques y jardines","Efectivo s/f",20000000],["Soda Belen SRL","Transferencia",44400],
+        ["Mayra Baño Quimico","Transferencia",55000],["Movistar","Fc. 0001-998939",8293.97]]},
+      otros:{label:"Otros mantenimientos y reparaciones",items:[
+        ["Nafta movil policial","Transferencia",382721.99],["Gastos librería","Transferencia",24000],
+        ["Nafta residuos","Transferencia",11001.04]]},
+      edenor:{label:"Impuestos y servicios",items:[
+        ["Ecoterra","Rbo.1900-00558",339600],["Cosefa","Fc. 015-0076338",11943.70],
+        ["Edenor AP1","Cta. 5176834871",32821.84],["Edenor AP2","Cta. 1879443257",7870.62],
+        ["Edenor AP3","Cta. 2858919000",94232.11],["Edenor CH","Cta. 1962427174",126696.97],
+        ["Edenor POR","Cta. 6146537920",166027.94],["Edenor SS","Cta. 7056963671",28536.38]]}
+    },
+    ingresos:[
+      ["Fragale, Guillermo","G16",200000],["Puletti, Alberto","Y38",200000],
+      ["Tutina SA","I12 I13 J05 J06",800000],["Jasminoy, Ignacio","C15 N11 N12",600000],
+      ["Novillo, Facundo","J04",600000],["Figueroa V, Julio","B16",400000],
+      ["Cacios, Jorge","B13",800000],["Najo, Susana","F08 F09 F10 AE03",800000],
+      ["Quintana, Juan Manuel","B01",200000],["Palpacelli, Carlos","A10 A11 A12 B07 B09 D02 J11 L12 M15 M16 M17",2200000],
+      ["Pastore, Luis - Rojas, Eva","A26",200000],["Manzelli, Natacha","I10 M02",400000],
+      ["Goñi, Uki","K06 K07",400000],["Giacchino, Diego","E19",200000],
+      ["Lago, Marcela","G12",400000],["Fidel, Sara","N09",200000],
+      ["Letang, Gabriel","M04",200000],["Goldschtein, Javier","O05",200000],
+      ["Calderon Oña, Juan Carlos","O03",200000],["Ottonello, Miguel","G13 G14",400000],
+      ["Lopez, Fernando","G09 M01",400000],["Weiss, Vernon","O07",200000],
+      ["Lago, Marcela","G12",400000],["Aldanondo, Matias","A02",800000],
+      ["Marquez, Andrea","C47",200000],["Lubnicky, Roberto","D20",200000],
+      ["Casaux Alsina, Santiago","Q04",200000],["Tello, German","O04",200000],
+      ["Valle, Marina","I15",200000],["Chamson, Axel","G10 G11 N09",600000],
+      ["Iturburu, Juan Pedro","E05 E06 I01 J01 J02",1000000],["Lastra, Julieta","E03 E04",1600000],
+      ["Meligeni, Claudio y Morales, Adriana","J08",200000],["Acuña, Hector Javier","K02",200000],
+      ["Blanco, Jorge","Y32",800000],["Garibaldi, Osvaldo","A01 F06",800000],
+      ["Beloli, Hugo","B02",200000],["Brun, Alejandro","F02 L01",800000],
+      ["Graziano, Gabriel","H13 N14",400000],["Brave, Marcelo","D05 D06 L08 L09",800000],
+      ["Castellarin, Gladys","C04",200000],["Colombo, Nicolas","B03 H17 H18",600000],
+      ["Malvichini, Andres","Y27",200000],["Stabile, Diego","L14",800000],
+      ["Burgueño, Analia Veronica","F11 F12 F13",590000],["Farias, Daniel","AC02 AC03 AC04 AC05 AC06",1000000],
+      ["Romano, Ezequiel","H10",200000],["Garcia, Santiago","H12",200000],
+      ["Aporte/Prestamo Desarrollador","",7500000]
     ]
   },
   abr26:{id:"abr26",mes:"Abril",anio:"2026",vto:"15/05/2026",periodo:"1 al 30/04/2026",status:"ok",
@@ -863,7 +916,7 @@ var EXPENSE_MONTHS = [
 
 var lineChart;
 var expenseChart;
-var HOME_MONTH_KEYS = ['dic25', 'ene26', 'feb26', 'mar26', 'abr26'];
+var HOME_MONTH_KEYS = ['dic25', 'ene26', 'feb26', 'mar26', 'abr26', 'may26'];
 var trendData = {
   labels:[],
   egresos:[],
@@ -1029,33 +1082,33 @@ function buildTrendData(){
 }
 
 function buildAprilExpenseBreakdown(){
-  var abril = MESES.abr26;
-  if (!abril || !abril.egresos) return [];
+  var mes = MESES.may26;
+  if (!mes || !mes.egresos) return [];
   return [
-    { label:'Mantenimiento', amount:abril.egresos.mantenimientos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#1d4f8f' },
-    { label:'Sueldos', amount:abril.egresos.sueldos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#2d73ca' },
-    { label:'Otros', amount:abril.egresos.otros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#5a9cc6' },
-    { label:'Servicios', amount:abril.egresos.edenor.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#88a88b' },
-    { label:'Monotributo', amount:abril.egresos.monotributo.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#bea77f' },
-    { label:'Seguros', amount:abril.egresos.seguros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#4b8f90' }
+    { label:'Mantenimiento', amount:mes.egresos.mantenimientos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#1d4f8f' },
+    { label:'Sueldos', amount:mes.egresos.sueldos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#2d73ca' },
+    { label:'Otros', amount:mes.egresos.otros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#5a9cc6' },
+    { label:'Servicios', amount:mes.egresos.edenor.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#88a88b' },
+    { label:'Monotributo', amount:mes.egresos.monotributo.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#bea77f' },
+    { label:'Seguros', amount:mes.egresos.seguros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#4b8f90' }
   ];
 }
 
 function renderHomeDashboard(){
   var months = buildTrendData();
-  var abril = getMonthSummary('abr26');
+  var mayo = getMonthSummary('may26');
   var totalEgresos = months.reduce(function(sum, item){ return sum + item.egresos; }, 0);
   var totalIngresos = months.reduce(function(sum, item){ return sum + item.ingresos; }, 0);
   var lotesAlDia = CC_CURRENT.lotes.filter(function(item){ return item.deuda === 0; }).length;
   var breakdown = buildAprilExpenseBreakdown();
   var breakdownTotal = breakdown.reduce(function(sum, item){ return sum + item.amount; }, 0);
   var map = [
-    ['home-abril-egresos', compactFmt(abril.egresos)],
-    ['home-abril-ingresos', compactFmt(abril.ingresos)],
-    ['home-abril-saldo', compactFmt(abril.saldo)],
+    ['home-abril-egresos', compactFmt(mayo.egresos)],
+    ['home-abril-ingresos', compactFmt(mayo.ingresos)],
+    ['home-abril-saldo', compactFmt(mayo.saldo)],
     ['home-total-egresos', fmt(totalEgresos)],
     ['home-total-ingresos', fmt(totalIngresos)],
-    ['home-saldo-acumulado', signedFmt(abril.saldo)],
+    ['home-saldo-acumulado', signedFmt(mayo.saldo)],
     ['home-lotes-dia', lotesAlDia + ' / ' + CC_CURRENT.lotes.length]
   ];
   map.forEach(function(entry){
