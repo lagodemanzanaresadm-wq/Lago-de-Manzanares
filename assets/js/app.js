@@ -590,8 +590,7 @@ var MESES = {
         ["Cano, Rodolfo","Monotributo 05-26",42386.74],["Heflein, Gaston","Monotributo 05-26",30758.31],
         ["Jara, Julio E.","Monotributo 05-26",42386.74],["Leiva, Miguel Angel","Monotributo 05-26",56501.85]]},
       seguros:{label:"Seguros",items:[
-        ["Seguro Responsabilidad Civil 5/11","Poliza nro. 271754",55584.40],
-        ["Seguro Accidentes Personales 1/2","Poliza nro. 10455954",36931.00]]},
+        ["Seguro Responsabilidad Civil 5/11","Poliza nro. 271754",55584.40]]},
       mantenimientos:{label:"Abonos por mantenimientos",items:[
         ["Mantenimiento parques y jardines","Efectivo s/f",20000000],["Soda Belen SRL","Transferencia",44400],
         ["Mayra Baño Quimico","Transferencia",55000],["Movistar","Fc. 0001-998939",8293.97]]},
