@@ -586,6 +586,60 @@ var CC_CURRENT = CC_MAY26;
 
 var NOTICES = [
   {
+    id:'cavance_may26',
+    title:'Informe Mensual de Trabajos - Mayo 2026',
+    date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
+    tag:'Informe de avance de obras',
+    pdfHref:'assets/docs/notices/zanara-informe-obra-mayo-2026.pdf',
+    desc:'Avances en red eléctrica, cloacas, agua potable, seguridad, mantenimiento y vialidades en mayo 2026.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Informe de avance de obras</span>' +
+      '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Mayo 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
+      '<div class="letter-highlight"><strong>Resumen del mes de Mayo</strong>' +
+      '<strong>Principales avances:</strong> Colocación de motores para el portón de la entrada. Confección del proyecto de vialidades internas en el barrio. Se continúa con las tareas de mantenimiento y limpieza general del predio. Se continúa con la colocación del cerco perimetral. Se completó el desmonte de la zona Sur. Se puso en servicio la red cloacal Zona Norte. Se realizaron pruebas en la red de agua potable.</div>' +
+      '<div class="notice-section-title">1. Red Eléctrica</div>' +
+      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
+      '<tr><td>Relevamiento del tendido eléctrico existente - Zona Norte</td><td>TECNAO</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Relevamiento de pilares existentes</td><td>—</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Reparaciones de la red de alumbrado y provisión de farolas – Zona Norte</td><td>A definir</td><td>En licitación</td></tr>' +
+      '<tr><td>Reparación del suministro de energía eléctrica</td><td>Edenor</td><td>En proceso</td></tr>' +
+      '</tbody></table>' +
+      '<p>Se ha realizado un relevamiento extenso de todos los pilares del barrio, obteniendo un detalle de la estructura de cada uno. Se han licitado las reparaciones de la red.</p>' +
+      '<div class="notice-section-title">2. Red Cloacal</div>' +
+      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
+      '<tr><td>Relevamiento de bocas de inspección y prueba hidráulica – Zona Norte</td><td>BROCA</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Puesta en servicio de la red cloacal – Zona Norte</td><td>BROCA</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Vaciado de la planta de tratamiento de efluentes y estaciones elevadoras - Norte</td><td>BROCA</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Normalización de la red cloacal – Zona Norte</td><td>A definir</td><td>En licitación</td></tr>' +
+      '<tr><td>Equipamiento de Planta de Tratamiento y Estación Elevadora – Zona Norte</td><td>A definir</td><td>En licitación</td></tr>' +
+      '</tbody></table>' +
+      '<p>Se ha completado la puesta en servicio de la red de cloacas, incluyendo desobstrucción de bocas de registro, reparación de tramos de cañería y reacondicionamiento de tapas. Se licitó la reparación de anomalías mayores.</p>' +
+      '<div class="notice-section-title">3. Red de Agua Potable</div>' +
+      '<p>Tras pruebas de la red se detectaron pérdidas puntuales en conexiones domiciliarias y troncales. Se solicita a los propietarios que avisen de pérdidas visibles en el barrio.</p>' +
+      '<div class="notice-section-title">4. Seguridad</div>' +
+      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
+      '<tr><td>Automatización de portones de entrada – Zona Norte</td><td>KARTOS</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Cercado del perímetro del cerco – Zona Norte</td><td>LEGUIZAMÓN ALAMBRADOS</td><td>En proceso</td></tr>' +
+      '<tr><td>Instalación carteles "Prohibido Bañarse"</td><td>DÍAZ MANTENIMIENTO</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Sistema de Seguridad Integral – Norte y Sur</td><td>A definir</td><td>En licitación</td></tr>' +
+      '</tbody></table>' +
+      '<p>Se han instalado los motores para la apertura automática de los portones de entrada. Continúan las tareas de cercado perimetral.</p>' +
+      '<div class="notice-section-title">5. Mantenimiento</div>' +
+      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
+      '<tr><td>Parquización – Zona Norte</td><td>MANTENIMIENTO DÍAZ</td><td>En proceso</td></tr>' +
+      '<tr><td>Fumigación – Norte y Sur</td><td>PyP</td><td><strong>Completado</strong></td></tr>' +
+      '<tr><td>Limpieza con retroexcavadoras – Norte y Sur</td><td>American Vial</td><td>En proceso</td></tr>' +
+      '</tbody></table>' +
+      '<p>Se ha completado la fumigación del predio contra malezas y hojas anchas. Se completó el desmonte de la zona Sur. Habrá retroexcavadoras trabajando en los márgenes del arroyo y la laguna.</p>' +
+      '<div class="notice-section-title">6. Vialidades</div>' +
+      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
+      '<tr><td>Proyecto Vial – Zona Norte</td><td>PEESA</td><td><strong>Completado</strong></td></tr>' +
+      '</tbody></table>' +
+      '<p>A fines de mayo se recibió el proyecto de red vial propuesto por la contratista, que define el paquete estructural para el pavimento, radios de giro, longitudes, pendientes y anchos de calzada. Se enviaron probetas de suelo a ensayar para determinar su aptitud de uso.</p>' +
+      '<div class="letter-signature">Atentamente,<br><strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong><br>En representación de Administración Lago de Manzanares</div>' +
+    '</div>'
+  },
+  {
     id:'cavance_abr26',
     title:'Informe Mensual de Trabajos - Abril 2026',
     date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
