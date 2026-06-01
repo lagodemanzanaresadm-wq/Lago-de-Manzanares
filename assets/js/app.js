@@ -797,8 +797,7 @@ var MESES = {
   may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
     saldoInicial:176781.83,
     docs:[
-      {label:"Liquidación Mayo 2026 (PDF)",href:MAY_2026_PDFS.liquidacion,primary:true},
-      {label:"Estado de cuenta propietarios Mayo 2026 (PDF)",href:MAY_2026_PDFS.estado}
+      {label:"Liquidación Mayo 2026 (PDF)",href:MAY_2026_PDFS.liquidacion,primary:true}
     ],
     egresos:{
       sueldos:{label:"Sueldos y aportes al personal",items:[
@@ -1510,8 +1509,7 @@ function renderCurrentAccountMeta(){
   if (diaEl) diaEl.textContent = alDia;
   if (deudaEl) deudaEl.textContent = conDeuda;
   if (docsRoot) {
-    docsRoot.innerHTML = '<a class="doc-action primary" href="' + MAY_2026_PDFS.liquidacion + '" target="_blank" rel="noopener">Liquidación PDF</a>' +
-      '<a class="doc-action" href="' + MAY_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
+    docsRoot.innerHTML = '<a class="doc-action primary" href="' + MAY_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
   }
 }
 
