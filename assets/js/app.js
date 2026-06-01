@@ -1,5 +1,11 @@
 'use strict';
 
+var MAY_2026_PDFS = {
+  carta:'assets/docs/may-2026/carta-gastos-administrativos-mayo-2026.pdf',
+  estado:'assets/docs/may-2026/estado-de-cuenta-propietarios-mayo-2026.pdf',
+  liquidacion:'assets/docs/may-2026/liquidacion-gastos-mayo-2026.pdf'
+};
+
 var APR_2026_PDFS = {
   carta:'assets/docs/apr-2026/carta-gastos-administrativos-abril-2026.pdf',
   estado:'assets/docs/apr-2026/estado-de-cuentas-corrientes-abril-2026.pdf',
@@ -17,6 +23,23 @@ var PAGE_TITLES = {
 };
 
 var LIQUIDACIONES = [
+  {
+    id:'gm26may',
+    title:'Carta de Gastos Adm. - Liquidación Mayo 2026',
+    date:'Buenos Aires, junio de 2026',
+    due:'Venc. 15/06/2026',
+    amount:'$ 200.000',
+    status:'Vigente',
+    bodyHtml:'<div class="letter-content">' +
+      '<div class="letter-kicker">Estimados propietarios:</div>' +
+      '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de mayo de 2026, con vencimiento el día 15 de junio de 2026.</p>' +
+      '<p>En los archivos adjuntos encontrarán la liquidación del período y el estado de cuenta de cada lote.</p>' +
+      '<div class="letter-highlight"><strong>Importe Mayo 2026</strong>$ 200.000 (pesos doscientos mil) por lote.</div>' +
+      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria - <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
+      '<div class="doc-actions"><a class="doc-action primary" href="' + MAY_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
   {
     id:'ga26',
     title:'Carta de Gastos Adm. - Liquidación Abril 2026',
@@ -550,6 +573,12 @@ var NOTICES = [
 ];
 
 var MESES = {
+  may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
+    docs:[
+      {label:"Liquidación Mayo 2026 (PDF)",href:MAY_2026_PDFS.liquidacion,primary:true},
+      {label:"Estado de cuenta propietarios Mayo 2026 (PDF)",href:MAY_2026_PDFS.estado}
+    ]
+  },
   abr26:{id:"abr26",mes:"Abril",anio:"2026",vto:"15/05/2026",periodo:"1 al 30/04/2026",status:"ok",
     docs:[
       {label:"Liquidación Abril 2026 (PDF)",href:APR_2026_PDFS.liquidacion,primary:true},
@@ -1051,7 +1080,7 @@ function renderHomeDashboard(){
 function renderLiquidationCards(){
   var root = document.getElementById('mgrid');
   if (!root) return;
-  var keys = ['abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
+  var keys = ['may26', 'abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
   root.innerHTML = keys.map(function(key){
     var d = MESES[key];
     var egr = ce(d);
