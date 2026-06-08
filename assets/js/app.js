@@ -586,6 +586,24 @@ var CC_CURRENT = CC_MAY26;
 
 var NOTICES = [
   {
+    id:'agua_jun26',
+    title:'Revisión de Instalaciones Internas de Agua',
+    date:'Buenos Aires, junio de 2026',
+    tag:'Comunicado informativo',
+    pdfHref:'assets/docs/notices/revision-instalaciones-agua-junio-2026.pdf',
+    desc:'Recomendación a propietarios de verificar el estado de cañerías internas ante trabajos de restablecimiento de la red de agua potable.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Comunicado informativo</span>' +
+      '<div class="letter-kicker">Estimados propietarios:</div>' +
+      '<p>En el marco de las tareas de mantenimiento, reacondicionamiento y puesta en funcionamiento de la red de distribución de agua del barrio, se ha detectado que algunas instalaciones domiciliarias podrían presentar deterioros ocasionados por el paso del tiempo, la exposición a las condiciones climáticas y la falta de uso prolongada.</p>' +
+      '<p>Por tal motivo, recomendamos a todos los propietarios verificar el estado de las cañerías internas de sus lotes y, de ser posible, solicitar la revisión de un plomero de confianza para detectar pérdidas, fisuras, roturas o cualquier otra anomalía que pudiera afectar el correcto funcionamiento de la instalación.</p>' +
+      '<p>Durante las pruebas y tareas de restablecimiento de presión se han observado algunos casos en los que se produjeron filtraciones o pérdidas en instalaciones internas debido a su estado de conservación. Por esta razón, consideramos importante realizar una revisión preventiva para evitar inconvenientes futuros y minimizar riesgos de daños dentro de las propiedades.</p>' +
+      '<p>Asimismo, durante los próximos días podrían llevarse adelante trabajos sobre las conexiones domiciliarias, incluyendo interrupciones temporales del suministro en determinados sectores, según lo requieran las tareas de mantenimiento programadas.</p>' +
+      '<p>Agradecemos la colaboración de todos los propietarios y quedamos a disposición para cualquier consulta.</p>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
+  {
     id:'cavance_may26',
     title:'Informe Mensual de Trabajos - Mayo 2026',
     date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
