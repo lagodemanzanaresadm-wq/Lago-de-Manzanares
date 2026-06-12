@@ -586,6 +586,24 @@ var CC_CURRENT = CC_MAY26;
 
 var NOTICES = [
   {
+    id:'alumbrado_jun26',
+    title:'Trabajos en el Sistema de Alumbrado Público',
+    date:'Buenos Aires, 12 de junio de 2026',
+    tag:'Comunicado informativo',
+    pdfHref:'assets/docs/notices/trabajos-alumbrado-publico-junio-2026.pdf',
+    desc:'Trabajos de puesta en valor y reparación del sistema de alumbrado público del barrio durante la próxima semana.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Comunicado informativo</span>' +
+      '<div class="letter-kicker">Estimados propietarios:</div>' +
+      '<p>Informamos que durante la próxima semana se estarán realizando trabajos de puesta en valor y reparación del sistema de alumbrado público del barrio.</p>' +
+      '<p>Las tareas incluirán la revisión, reparación y, en algunos casos, el retiro temporal de farolas para su acondicionamiento. En aquellos sectores donde sea necesario retirar artefactos de iluminación, se colocarán reflectores provisorios para garantizar que el área continúe iluminada durante la noche.</p>' +
+      '<p>No obstante, mientras se desarrollan los trabajos, podría ocurrir que de manera puntual algún sector quede momentáneamente sin iluminación hasta que se completen las reparaciones correspondientes.</p>' +
+      '<p>La empresa encargada de los trabajos tiene instrucciones de verificar diariamente, antes de finalizar la jornada, que los sectores intervenidos mantengan iluminación nocturna y, de ser necesario, instalar los reflectores provisorios correspondientes.</p>' +
+      '<p>Agradecemos su comprensión mientras avanzamos con estas mejoras, que tienen como objetivo optimizar la seguridad y el funcionamiento del alumbrado público del barrio.</p>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+      '</div>'
+  },
+  {
     id:'agua_jun26',
     title:'Revisión de Instalaciones Internas de Agua',
     date:'Buenos Aires, junio de 2026',
