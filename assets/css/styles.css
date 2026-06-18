@@ -398,6 +398,14 @@
     background:linear-gradient(0deg,rgba(7,18,36,.80) 0%,rgba(7,18,36,.30) 46%,rgba(7,18,36,.06) 72%,transparent 100%);
     z-index:1;
   }
+  .hero-banner--white{
+    background:#fff;
+    min-height:260px;
+  }
+  .hero-banner--white:after{display:none}
+  .hero-logo--dark{
+    filter:brightness(0) saturate(100%) invert(24%) sepia(22%) saturate(700%) hue-rotate(172deg) brightness(88%) contrast(90%);
+  }
   .hero-photo{
     position:absolute;
     inset:0;
