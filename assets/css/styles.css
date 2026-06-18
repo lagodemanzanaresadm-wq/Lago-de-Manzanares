@@ -428,6 +428,13 @@
     margin-bottom:0;
   }
 
+  .hero-logo{
+    height:110px;
+    width:auto;
+    display:block;
+    filter:brightness(0) invert(1) drop-shadow(0 2px 12px rgba(0,0,0,.4));
+  }
+
   .hero-text p{
     font-size:15px;
     color:rgba(255,255,255,.82);
@@ -2005,6 +2012,7 @@
       box-shadow:none;
     }
     .hero-text h1{font-size:26px;line-height:1.04;margin-bottom:0;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+    .hero-logo{height:80px}
     .home-finance-grid{display:none}
     .home-action-grid,.home-finance-grid,.contact-grid,.payment-shell,.expense-layout,.liquid-layout{grid-template-columns:1fr}
     .home-action-grid,.home-finance-grid{gap:12px;margin-bottom:12px}
