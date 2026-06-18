@@ -55,8 +55,8 @@
   }
 
   #sidebar{
-    width:264px;
-    flex:0 0 264px;
+    width:200px;
+    flex:0 0 200px;
     height:calc(100vh - 32px);
     position:sticky;
     top:16px;
@@ -81,8 +81,8 @@
   }
 
   body.sidebar-collapsed #sidebar{
-    width:92px;
-    flex-basis:92px;
+    width:68px;
+    flex-basis:68px;
   }
 
   .sb-logo{
@@ -2112,12 +2112,12 @@
     }
     .info-row strong{text-align:left;word-break:break-word}
     #mobile-nav{
+      display:none;
       position:fixed;
       left:10px;
       right:10px;
       bottom:max(10px, env(safe-area-inset-bottom));
       z-index:60;
-      display:grid;
       grid-template-columns:repeat(6,minmax(0,1fr));
       gap:4px;
       padding:8px;
