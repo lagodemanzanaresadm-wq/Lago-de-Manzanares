@@ -1,11 +1,5 @@
 'use strict';
 
-var MAY_2026_PDFS = {
-  carta:'assets/docs/may-2026/carta-gastos-administrativos-mayo-2026.pdf',
-  estado:'assets/docs/may-2026/estado-de-cuenta-propietarios-mayo-2026.pdf',
-  liquidacion:'assets/docs/may-2026/liquidacion-gastos-mayo-2026.pdf'
-};
-
 var APR_2026_PDFS = {
   carta:'assets/docs/apr-2026/carta-gastos-administrativos-abril-2026.pdf',
   estado:'assets/docs/apr-2026/estado-de-cuentas-corrientes-abril-2026.pdf',
@@ -23,28 +17,6 @@ var PAGE_TITLES = {
 };
 
 var LIQUIDACIONES = [
-  {
-    id:'gm26may',
-    title:'Carta de Gastos Adm. - Liquidación Mayo 2026',
-    date:'Buenos Aires, junio de 2026',
-    due:'Venc. 15/06/2026',
-    amount:'$ 200.000',
-    status:'Vigente',
-    bodyHtml:'<div class="letter-content">' +
-      '<div class="letter-kicker">Estimados propietarios:</div>' +
-      '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de mayo de 2026, con vencimiento el día 15 de junio de 2026.</p>' +
-      '<p>En los archivos adjuntos encontrarán la siguiente documentación:</p>' +
-      '<ul><li>Liquidación correspondiente al período mayo 2026.</li><li>Estado de cuenta de cada lote.</li></ul>' +
-      '<div class="letter-highlight"><strong>Importe Mayo 2026</strong>$ 200.000 — pesos doscientos mil</div>' +
-      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria — <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
-      '<div class="letter-highlight"><strong>Importante</strong>Recordamos que los gastos administrativos mensuales deben ser abonados por todos los propietarios, ya que son necesarios para cubrir los costos de funcionamiento y mantenimiento del barrio. Los pagos realizados fuera de término generan un interés por mora del 4% mensual, que se aplicará hasta la cancelación total de la deuda.</div>' +
-      '<p>Actualmente, parte de los gastos que no son cubiertos por los propietarios morosos continúan siendo afrontados por el desarrollador. Sin embargo, esta situación no puede mantenerse indefinidamente.</p>' +
-      '<p>Por tal motivo, solicitamos a quienes registren deuda desde enero del corriente año que regularicen su situación a la brevedad. Asimismo, pedimos a todos los propietarios respetar los vencimientos establecidos para evitar mayores atrasos y asegurar la continuidad de los servicios comunes.</p>' +
-      '<p>Ante cualquier consulta, quedamos a disposición.</p>' +
-      '<div class="doc-actions"><a class="doc-action primary" href="' + MAY_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
-      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
-    '</div>'
-  },
   {
     id:'ga26',
     title:'Carta de Gastos Adm. - Liquidación Abril 2026',
@@ -363,318 +335,9 @@ var CC_APR26 = {
   ]
 };
 
-var CC_MAY26 = {
-  periodo: "Mayo 2026",
-  lotes: [
-    {lote:"A-1",nombre:"Garibaldi, Osvaldo",deuda:0},
-    {lote:"A-2",nombre:"Aldanondo, Matias",deuda:0},
-    {lote:"A-10",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"A-11",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"A-12",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"A-15",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"A-16",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"A-17",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"A-22",nombre:"Haberthal, Olga Andrea",deuda:832000},
-    {lote:"A-23",nombre:"Haberthal, Olga Andrea",deuda:832000},
-    {lote:"A-25",nombre:"Rossi, Marcelo y Erut M. de los Angeles",deuda:832000},
-    {lote:"A-26",nombre:"Rojas, Eva Celina y Luis Pastore",deuda:0},
-    {lote:"A-29",nombre:"Izbisky, Mario Arian",deuda:832000},
-    {lote:"A-30",nombre:"Agar, Patricio",deuda:832000},
-    {lote:"A-32",nombre:"Gagliardo, Renato Lorenzo",deuda:832000},
-    {lote:"A-33",nombre:"Gagliardo, Ruben Diego",deuda:832000},
-    {lote:"A-36",nombre:"Woinilowicz, Jorge Eduardo",deuda:832000},
-    {lote:"B-1",nombre:"Quintana, Juan Manuel",deuda:0},
-    {lote:"B-2",nombre:"Beloli, Hugo Eduardo Claudio",deuda:624000},
-    {lote:"B-3",nombre:"Colombo, Nicolas",deuda:0},
-    {lote:"B-7",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"B-8",nombre:"Fernandez, Ricardo",deuda:832000},
-    {lote:"B-9",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"B-10",nombre:"Pascual, Gonzalo",deuda:0},
-    {lote:"B-11",nombre:"Pascual, Gonzalo",deuda:0},
-    {lote:"B-12",nombre:"Pascual, Gonzalo",deuda:0},
-    {lote:"B-13",nombre:"Cacios, Jorge Jose Eduardo",deuda:0},
-    {lote:"B-15",nombre:"Verardo, Maria Laura",deuda:832000},
-    {lote:"B-16",nombre:"Villamayor F., Julio",deuda:0},
-    {lote:"B-19",nombre:"Bivort, Marcela",deuda:832000},
-    {lote:"B-20",nombre:"Baldini, Camilo",deuda:832000},
-    {lote:"C-4",nombre:"Bardas Jorge Eduardo y Castellarin Gladys",deuda:416000},
-    {lote:"C-7",nombre:"Elizalde, Hernan Ricardo",deuda:832000},
-    {lote:"C-8",nombre:"Goldaracena, Isabel Maria",deuda:832000},
-    {lote:"C-9",nombre:"Moyano, Walter Alejandro",deuda:832000},
-    {lote:"C-15",nombre:"Jasminoy, Ignacio",deuda:0},
-    {lote:"C-20",nombre:"Saponare, Jaime",deuda:832000},
-    {lote:"C-31",nombre:"Caputo, Monica Maria",deuda:832000},
-    {lote:"C-32",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"C-33",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"C-43",nombre:"Paz, Ignacio Mario",deuda:832000},
-    {lote:"C-45",nombre:"Semorile, Alejandro Adolfo",deuda:832000},
-    {lote:"C-46",nombre:"Semorile, Alejandro Adolfo",deuda:832000},
-    {lote:"C-47",nombre:"Marquez, Graciela",deuda:0},
-    {lote:"C-48",nombre:"Garat, Juan Martin",deuda:832000},
-    {lote:"C-49",nombre:"Garat, Gaston",deuda:832000},
-    {lote:"D-2",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"D-5",nombre:"Brave, Marcelo",deuda:624000},
-    {lote:"D-6",nombre:"Brave, Marcelo",deuda:624000},
-    {lote:"D-11",nombre:"Ginepro, Maria Sol y Sario, Rodrigo",deuda:832000},
-    {lote:"D-20",nombre:"Walpen, Karina Rosana",deuda:0},
-    {lote:"E-1",nombre:"Lansa SA",deuda:832000},
-    {lote:"E-2",nombre:"Sartori, Maria Adela",deuda:832000},
-    {lote:"E-3",nombre:"Lastra, Patricio",deuda:0},
-    {lote:"E-4",nombre:"Lastra, Patricio",deuda:0},
-    {lote:"E-5",nombre:"Sartori, Maria Clemencia",deuda:0},
-    {lote:"E-6",nombre:"Sartori, Maria Clemencia",deuda:0},
-    {lote:"E-14",nombre:"Caputo, Monica Maria",deuda:832000},
-    {lote:"E-15",nombre:"Vazquez, Roberto Gustavo",deuda:832000},
-    {lote:"E-16",nombre:"Clauser, Lazaro",deuda:832000},
-    {lote:"E-17",nombre:"Haberthal, Olga Andrea",deuda:832000},
-    {lote:"E-18",nombre:"Haberthal, Olga Andrea",deuda:832000},
-    {lote:"E-19",nombre:"Giacchino, Diego",deuda:0},
-    {lote:"F-2",nombre:"Stabile, Virginia",deuda:0},
-    {lote:"F-4",nombre:"Hugues, Felipe",deuda:832000},
-    {lote:"F-5",nombre:"Elizalde, Hernan",deuda:832000},
-    {lote:"F-6",nombre:"Garibaldi, Osvaldo",deuda:0},
-    {lote:"F-7",nombre:"Leonardi, Carlos",deuda:832000},
-    {lote:"F-8",nombre:"Najo, Susana",deuda:0},
-    {lote:"F-9",nombre:"Najo, Susana",deuda:0},
-    {lote:"F-10",nombre:"Bitensky, Carlos Alberto",deuda:0},
-    {lote:"F-11",nombre:"de Alzaga, Clara",deuda:208000},
-    {lote:"F-12",nombre:"de Alzaga, Clara",deuda:208000},
-    {lote:"F-13",nombre:"Stabile, Mauro",deuda:208000},
-    {lote:"F-14",nombre:"Liberatore Diana y Rotaeche Luis",deuda:832000},
-    {lote:"F-15",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"F-16",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"F-19",nombre:"Haberthal, Olga Andrea",deuda:832000},
-    {lote:"F-21",nombre:"Rotaeche, Luis Maria",deuda:832000},
-    {lote:"F-22",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"G-1",nombre:"Regis, Pablo",deuda:832000},
-    {lote:"G-2",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"G-3",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"G-4",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"G-5",nombre:"Kirschenbaum, Hector y Veronica",deuda:832000},
-    {lote:"G-6",nombre:"Kirschenbaum, Hector y Veronica",deuda:832000},
-    {lote:"G-7",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"G-9",nombre:"Lopez, Fernando - Chamson, Axel",deuda:0},
-    {lote:"G-10",nombre:"Lopez, Fernando y Beliera Norma - Chamson, Axel",deuda:0},
-    {lote:"G-11",nombre:"Armiento de Chamson",deuda:0},
-    {lote:"G-12",nombre:"Lago, Marcela",deuda:0},
-    {lote:"G-13",nombre:"Gimenez Natale, M. Ines y Ottonello Miguel A.",deuda:0},
-    {lote:"G-14",nombre:"Ottonello Miguel A. y Gimenez Natale, M. Ines",deuda:0},
-    {lote:"G-16",nombre:"Fragale, Guillermo",deuda:0},
-    {lote:"G-17",nombre:"Imas, Luis Alberto",deuda:832000},
-    {lote:"G-20",nombre:"Saponare, Jaime",deuda:832000},
-    {lote:"H-1",nombre:"Facino, Ivana Carina",deuda:832000},
-    {lote:"H-7",nombre:"Alvarez, Francisco",deuda:832000},
-    {lote:"H-10",nombre:"Sabile, Diego Javier",deuda:0},
-    {lote:"H-12",nombre:"Paz, Ignacio Mario",deuda:0},
-    {lote:"H-13",nombre:"Graziano, Gabriel",deuda:0},
-    {lote:"H-17",nombre:"Colombo, Nicolas",deuda:0},
-    {lote:"H-18",nombre:"Colombo, Nicolas",deuda:0},
-    {lote:"I-1",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:0},
-    {lote:"I-2",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:832000},
-    {lote:"I-3",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:832000},
-    {lote:"I-4",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:832000},
-    {lote:"I-5",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"I-6",nombre:"Thibaud, Maximo Pedro",deuda:832000},
-    {lote:"I-7",nombre:"Thibaud, Maximo Pedro",deuda:832000},
-    {lote:"I-10",nombre:"Palla, Federico y Manzelli, Natacha",deuda:0},
-    {lote:"I-11",nombre:"Imas, Luis Alberto",deuda:832000},
-    {lote:"I-12",nombre:"Tutina SA",deuda:0},
-    {lote:"I-13",nombre:"Isabella, Diego",deuda:0},
-    {lote:"I-15",nombre:"Valle, Oscar Raul y Marina",deuda:0},
-    {lote:"I-16",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"I-17",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"I-18",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"J-1",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:0},
-    {lote:"J-2",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:0},
-    {lote:"J-4",nombre:"Novillo Almada, Facundo",deuda:0},
-    {lote:"J-5",nombre:"Tutina SA",deuda:0},
-    {lote:"J-6",nombre:"Isabella, Sebastian",deuda:0},
-    {lote:"J-7",nombre:"Cazenave, Bernardo y Fernandez Nogues, Maria G.",deuda:832000},
-    {lote:"J-8",nombre:"Morales, Adriana Marcela",deuda:624000},
-    {lote:"J-10",nombre:"Gioviazzo, Laura",deuda:832000},
-    {lote:"J-11",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"K-1",nombre:"Vaca, Mario Gustavo",deuda:832000},
-    {lote:"K-2",nombre:"Acuña, Hector Javier",deuda:0},
-    {lote:"K-3",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"K-4",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"K-6",nombre:"Salaberry de Escayola, Virginia",deuda:0},
-    {lote:"K-7",nombre:"Salaberry de Escayola, Virginia",deuda:0},
-    {lote:"K-8",nombre:"Wilson, Ines del Campo",deuda:832000},
-    {lote:"L-1",nombre:"Brun M. Josefina y Brun Tomas",deuda:0},
-    {lote:"L-8",nombre:"Brave, Marcelo",deuda:624000},
-    {lote:"L-9",nombre:"Brave, Marcelo",deuda:624000},
-    {lote:"L-10",nombre:"Imas, Luis Alberto",deuda:832000},
-    {lote:"L-11",nombre:"Imas, Luis Alberto",deuda:832000},
-    {lote:"L-12",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"L-14",nombre:"Sabile, Diego Javier",deuda:0},
-    {lote:"M-1",nombre:"Lopez, Fernando y Beleira, Norma Beatriz",deuda:0},
-    {lote:"M-2",nombre:"Palla, Federico y Manzelli, Natacha",deuda:0},
-    {lote:"M-4",nombre:"Letang, Gabriel Dario",deuda:0},
-    {lote:"M-5",nombre:"Woinilowicz, Jorge Eduardo",deuda:832000},
-    {lote:"M-6",nombre:"Garcia, Carlos Alberto",deuda:832000},
-    {lote:"M-12",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"M-13",nombre:"Vazquez, Roberto Gustavo",deuda:832000},
-    {lote:"M-14",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"M-15",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"M-16",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"M-17",nombre:"Palpacelli, Carlos Ariel",deuda:416000},
-    {lote:"M-18",nombre:"Carcarami Matias Juan y Cervin, Liliana",deuda:832000},
-    {lote:"N-6",nombre:"Coffey, Santiago Eduardo",deuda:832000},
-    {lote:"N-7",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"N-8",nombre:"Fidel, Sara",deuda:208000},
-    {lote:"N-9",nombre:"Chamson, Axel",deuda:0},
-    {lote:"N-10",nombre:"Figueroa, Julio Santiago",deuda:832000},
-    {lote:"N-11",nombre:"Jasminoy, Ignacio",deuda:0},
-    {lote:"N-12",nombre:"Jasminoy, Hector Iseo",deuda:0},
-    {lote:"N-14",nombre:"Graziano, Gabriel",deuda:0},
-    {lote:"N-15",nombre:"Villavicencio, Juan Martin",deuda:832000},
-    {lote:"O-3",nombre:"Calderon Oña, Juan Carlos",deuda:0},
-    {lote:"O-4",nombre:"Tello, German",deuda:0},
-    {lote:"O-5",nombre:"Goldschtein, Javier",deuda:208000},
-    {lote:"O-6",nombre:"Diaz, Paula Mariana",deuda:832000},
-    {lote:"O-7",nombre:"Weiss, Vernon Roy",deuda:0},
-    {lote:"O-8",nombre:"Bunge, Diego",deuda:832000},
-    {lote:"Q-2",nombre:"Segovia, Diego",deuda:624000},
-    {lote:"Q-4",nombre:"Casaux Alsina, Santiago",deuda:0},
-    {lote:"Q-6",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"Q-57",nombre:"Garibaldi, Osvaldo",deuda:832000},
-    {lote:"Y-9",nombre:"Williner, Miguel",deuda:832000},
-    {lote:"Y-11",nombre:"Candiotti, Florencia",deuda:832000},
-    {lote:"Y-22",nombre:"Sojo, Ernesto Tomas",deuda:832000},
-    {lote:"Y-25",nombre:"Caputo, Monica Maria",deuda:832000},
-    {lote:"Y-26",nombre:"Vazquez, Roberto Gustavo",deuda:832000},
-    {lote:"Y-27",nombre:"Malvicchini, Enrique Francisco",deuda:0},
-    {lote:"Y-28",nombre:"Acevedo de Lucchia Puig, Florencia",deuda:832000},
-    {lote:"Y-29",nombre:"Bunge, Diego",deuda:832000},
-    {lote:"Y-30",nombre:"Woinilowicz, Jorge Eduardo",deuda:832000},
-    {lote:"Y-32",nombre:"Blanco, Jorge Osvaldo",deuda:0},
-    {lote:"Y-35",nombre:"Barciela, Norberto y Gambin, Graciela",deuda:832000},
-    {lote:"Y-36",nombre:"Alvarez, Francisco",deuda:832000},
-    {lote:"Y-37",nombre:"Pujol, Flavio Luis",deuda:832000},
-    {lote:"Y-38",nombre:"Puletti, Alberto",deuda:0},
-    {lote:"Y-39",nombre:"Aguilera, Omar Ariel",deuda:832000},
-    {lote:"Y-40",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"Z-24",nombre:"Noseda, Claudia Maria Josefina",deuda:832000},
-    {lote:"Z-28",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"Z-29",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"Z-30",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"Z-31",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"Z-32",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"Z-39",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"AC-2",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
-    {lote:"AC-3",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
-    {lote:"AC-4",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
-    {lote:"AC-5",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
-    {lote:"AC-6",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
-    {lote:"AC-15",nombre:"Vazquez, Roberto Gustavo",deuda:832000},
-    {lote:"AC-16",nombre:"Caputo, Jose Luis",deuda:832000},
-    {lote:"AC-17",nombre:"Caputo, Monica Maria",deuda:832000},
-    {lote:"AD-3",nombre:"Loybaco SA",deuda:832000},
-    {lote:"AD-4",nombre:"Saponare, Pablo",deuda:832000},
-    {lote:"AD-5",nombre:"Flucks, Gladys Mariana",deuda:832000},
-    {lote:"AD-6",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"AD-8",nombre:"Caputo, Jorge Antonio Nicolas",deuda:832000},
-    {lote:"AD-9",nombre:"Caputo, Nicolas Martin",deuda:832000},
-    {lote:"AE-1",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"AE-2",nombre:"Otero, Jesus",deuda:832000},
-    {lote:"AE-3",nombre:"Najo, Susana",deuda:0},
-    {lote:"AE-4",nombre:"Kosacoff, Bernardo",deuda:832000}
-  ]
-};
-
-var CC_CURRENT = CC_MAY26;
+var CC_CURRENT = CC_APR26;
 
 var NOTICES = [
-  {
-    id:'alumbrado_jun26',
-    title:'Trabajos en el Sistema de Alumbrado Público',
-    date:'Buenos Aires, 12 de junio de 2026',
-    tag:'Comunicado informativo',
-    pdfHref:'assets/docs/notices/trabajos-alumbrado-publico-junio-2026.pdf',
-    desc:'Trabajos de puesta en valor y reparación del sistema de alumbrado público del barrio durante la próxima semana.',
-    bodyHtml:'<div class="letter-content">' +
-      '<span class="notice-tag">Comunicado informativo</span>' +
-      '<div class="letter-kicker">Estimados propietarios:</div>' +
-      '<p>Informamos que durante la próxima semana se estarán realizando trabajos de puesta en valor y reparación del sistema de alumbrado público del barrio.</p>' +
-      '<p>Las tareas incluirán la revisión, reparación y, en algunos casos, el retiro temporal de farolas para su acondicionamiento. En aquellos sectores donde sea necesario retirar artefactos de iluminación, se colocarán reflectores provisorios para garantizar que el área continúe iluminada durante la noche.</p>' +
-      '<p>No obstante, mientras se desarrollan los trabajos, podría ocurrir que de manera puntual algún sector quede momentáneamente sin iluminación hasta que se completen las reparaciones correspondientes.</p>' +
-      '<p>La empresa encargada de los trabajos tiene instrucciones de verificar diariamente, antes de finalizar la jornada, que los sectores intervenidos mantengan iluminación nocturna y, de ser necesario, instalar los reflectores provisorios correspondientes.</p>' +
-      '<p>Agradecemos su comprensión mientras avanzamos con estas mejoras, que tienen como objetivo optimizar la seguridad y el funcionamiento del alumbrado público del barrio.</p>' +
-      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
-      '</div>'
-  },
-  {
-    id:'agua_jun26',
-    title:'Revisión de Instalaciones Internas de Agua',
-    date:'Buenos Aires, junio de 2026',
-    tag:'Comunicado informativo',
-    pdfHref:'assets/docs/notices/revision-instalaciones-agua-junio-2026.pdf',
-    desc:'Recomendación a propietarios de verificar el estado de cañerías internas ante trabajos de restablecimiento de la red de agua potable.',
-    bodyHtml:'<div class="letter-content">' +
-      '<span class="notice-tag">Comunicado informativo</span>' +
-      '<div class="letter-kicker">Estimados propietarios:</div>' +
-      '<p>En el marco de las tareas de mantenimiento, reacondicionamiento y puesta en funcionamiento de la red de distribución de agua del barrio, se ha detectado que algunas instalaciones domiciliarias podrían presentar deterioros ocasionados por el paso del tiempo, la exposición a las condiciones climáticas y la falta de uso prolongada.</p>' +
-      '<p>Por tal motivo, recomendamos a todos los propietarios verificar el estado de las cañerías internas de sus lotes y, de ser posible, solicitar la revisión de un plomero de confianza para detectar pérdidas, fisuras, roturas o cualquier otra anomalía que pudiera afectar el correcto funcionamiento de la instalación.</p>' +
-      '<p>Durante las pruebas y tareas de restablecimiento de presión se han observado algunos casos en los que se produjeron filtraciones o pérdidas en instalaciones internas debido a su estado de conservación. Por esta razón, consideramos importante realizar una revisión preventiva para evitar inconvenientes futuros y minimizar riesgos de daños dentro de las propiedades.</p>' +
-      '<p>Asimismo, durante los próximos días podrían llevarse adelante trabajos sobre las conexiones domiciliarias, incluyendo interrupciones temporales del suministro en determinados sectores, según lo requieran las tareas de mantenimiento programadas.</p>' +
-      '<p>Agradecemos la colaboración de todos los propietarios y quedamos a disposición para cualquier consulta.</p>' +
-      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
-    '</div>'
-  },
-  {
-    id:'cavance_may26',
-    title:'Informe Mensual de Trabajos - Mayo 2026',
-    date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
-    tag:'Informe de avance de obras',
-    pdfHref:'assets/docs/notices/zanara-informe-obra-mayo-2026.pdf',
-    desc:'Avances en red eléctrica, cloacas, agua potable, seguridad, mantenimiento y vialidades en mayo 2026.',
-    bodyHtml:'<div class="letter-content">' +
-      '<span class="notice-tag">Informe de avance de obras</span>' +
-      '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Mayo 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
-      '<div class="letter-highlight"><strong>Resumen del mes de Mayo</strong>' +
-      '<strong>Principales avances:</strong> Colocación de motores para el portón de la entrada. Confección del proyecto de vialidades internas en el barrio. Se continúa con las tareas de mantenimiento y limpieza general del predio. Se continúa con la colocación del cerco perimetral. Se completó el desmonte de la zona Sur. Se puso en servicio la red cloacal Zona Norte. Se realizaron pruebas en la red de agua potable.</div>' +
-      '<div class="notice-section-title">1. Red Eléctrica</div>' +
-      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
-      '<tr><td>Relevamiento del tendido eléctrico existente - Zona Norte</td><td>TECNAO</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Relevamiento de pilares existentes</td><td>—</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Reparaciones de la red de alumbrado y provisión de farolas – Zona Norte</td><td>A definir</td><td>En licitación</td></tr>' +
-      '<tr><td>Reparación del suministro de energía eléctrica</td><td>Edenor</td><td>En proceso</td></tr>' +
-      '</tbody></table>' +
-      '<p>Se ha realizado un relevamiento extenso de todos los pilares del barrio, obteniendo un detalle de la estructura de cada uno. Se han licitado las reparaciones de la red.</p>' +
-      '<div class="notice-section-title">2. Red Cloacal</div>' +
-      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
-      '<tr><td>Relevamiento de bocas de inspección y prueba hidráulica – Zona Norte</td><td>BROCA</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Puesta en servicio de la red cloacal – Zona Norte</td><td>BROCA</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Vaciado de la planta de tratamiento de efluentes y estaciones elevadoras - Norte</td><td>BROCA</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Normalización de la red cloacal – Zona Norte</td><td>A definir</td><td>En licitación</td></tr>' +
-      '<tr><td>Equipamiento de Planta de Tratamiento y Estación Elevadora – Zona Norte</td><td>A definir</td><td>En licitación</td></tr>' +
-      '</tbody></table>' +
-      '<p>Se ha completado la puesta en servicio de la red de cloacas, incluyendo desobstrucción de bocas de registro, reparación de tramos de cañería y reacondicionamiento de tapas. Se licitó la reparación de anomalías mayores.</p>' +
-      '<div class="notice-section-title">3. Red de Agua Potable</div>' +
-      '<p>Tras pruebas de la red se detectaron pérdidas puntuales en conexiones domiciliarias y troncales. Se solicita a los propietarios que avisen de pérdidas visibles en el barrio.</p>' +
-      '<div class="notice-section-title">4. Seguridad</div>' +
-      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
-      '<tr><td>Automatización de portones de entrada – Zona Norte</td><td>KARTOS</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Cercado del perímetro del cerco – Zona Norte</td><td>LEGUIZAMÓN ALAMBRADOS</td><td>En proceso</td></tr>' +
-      '<tr><td>Instalación carteles "Prohibido Bañarse"</td><td>DÍAZ MANTENIMIENTO</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Sistema de Seguridad Integral – Norte y Sur</td><td>A definir</td><td>En licitación</td></tr>' +
-      '</tbody></table>' +
-      '<p>Se han instalado los motores para la apertura automática de los portones de entrada. Continúan las tareas de cercado perimetral.</p>' +
-      '<div class="notice-section-title">5. Mantenimiento</div>' +
-      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
-      '<tr><td>Parquización – Zona Norte</td><td>MANTENIMIENTO DÍAZ</td><td>En proceso</td></tr>' +
-      '<tr><td>Fumigación – Norte y Sur</td><td>PyP</td><td><strong>Completado</strong></td></tr>' +
-      '<tr><td>Limpieza con retroexcavadoras – Norte y Sur</td><td>American Vial</td><td>En proceso</td></tr>' +
-      '</tbody></table>' +
-      '<p>Se ha completado la fumigación del predio contra malezas y hojas anchas. Se completó el desmonte de la zona Sur. Habrá retroexcavadoras trabajando en los márgenes del arroyo y la laguna.</p>' +
-      '<div class="notice-section-title">6. Vialidades</div>' +
-      '<table class="notice-table"><thead><tr><th>Concepto</th><th>Empresa / Contratista</th><th>Estado</th></tr></thead><tbody>' +
-      '<tr><td>Proyecto Vial – Zona Norte</td><td>PEESA</td><td><strong>Completado</strong></td></tr>' +
-      '</tbody></table>' +
-      '<p>A fines de mayo se recibió el proyecto de red vial propuesto por la contratista, que define el paquete estructural para el pavimento, radios de giro, longitudes, pendientes y anchos de calzada. Se enviaron probetas de suelo a ensayar para determinar su aptitud de uso.</p>' +
-      '<div class="letter-signature">Atentamente,<br><strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong><br>En representación de Administración Lago de Manzanares</div>' +
-    '</div>'
-  },
   {
     id:'cavance_abr26',
     title:'Informe Mensual de Trabajos - Abril 2026',
@@ -749,50 +412,6 @@ var NOTICES = [
       '<div class="notice-section-title">6. Agrimensura / Topografía</div>' +
       '<p>Se avanzó con demarcación de puntos fijos a lo largo de todo el barrio para futuros trabajos de topografía. <strong>Puntos Naranjas:</strong> delimitación del cerco. <strong>Puntos Azules:</strong> puntos fijos para relevamiento topográfico. Se solicita a los propietarios mantener la integridad de estos puntos.</p>' +
       '<div class="letter-signature">Atentamente,<br><strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong><br>En representación de Administración Lago de Manzanares</div>' +
-    '</div>'
-  },
-  {
-    id:'minuta_abr26',
-    title:'Informe de Reunión con Propietarios - Abril 2026',
-    date:'Administración Lago de Manzanares',
-    tag:'Comunicado',
-    pdfHref:'assets/docs/notices/minuta-reunion-propietarios-abril-2026.pdf',
-    desc:'Resumen de la reunión del 25 de abril: gastos administrativos, morosidad, ARBA, obras y seguridad.',
-    bodyHtml:'<div class="letter-content">' +
-      '<span class="notice-tag">Comunicado</span>' +
-      '<p>A continuación compartimos un resumen detallado de los temas abordados en la reunión mantenida el <strong>25 de abril de 2026</strong>, cuyo objetivo principal fue generar un espacio de diálogo directo, reforzar la comunicación con los propietarios y tratar aspectos clave vinculados al funcionamiento y desarrollo del barrio.</p>' +
-      '<div class="notice-section-title">Objetivo de la Reunión</div>' +
-      '<p>Durante el encuentro se hizo especial hincapié en la necesidad de fortalecer los canales de comunicación, dado que se detectó una baja respuesta a las comunicaciones enviadas por correo electrónico. La reunión permitió intercambiar opiniones, aclarar dudas y poner en común la situación actual del barrio.</p>' +
-      '<div class="notice-section-title">Gastos Administrativos y Morosidad</div>' +
-      '<p>Los gastos administrativos actuales están destinados a cubrir servicios comunes: portería, mantenimiento general, consumo de energía eléctrica y seguridad. La recaudación actual resulta insuficiente debido al alto nivel de morosidad existente.</p>' +
-      '<div class="letter-highlight">' +
-        '<strong>Medidas definidas:</strong><br>' +
-        '• Se avanzará en la actualización de la base de datos de contacto.<br>' +
-        '• Se intensificará el contacto individual con propietarios para regularizar la situación.<br>' +
-        '• A partir de <strong>mayo de 2026</strong> se aplicarán intereses por mora sobre los saldos impagos.<br>' +
-        '• Una vez agotadas las instancias de diálogo, se evaluará el inicio de <strong>acciones legales</strong> contra los propietarios morosos.<br><br>' +
-        '<strong>Regularización:</strong> El pago equivalente a 24 meses calculados a valores de noviembre de 2025 (total: $2.400.000) permite normalizar deudas acumuladas en años anteriores.' +
-      '</div>' +
-      '<div class="notice-section-title">ARBA</div>' +
-      '<p>La mayoría de los lotes de la Zona Norte ya cuentan con su partida individual ante ARBA. El incumplimiento en el pago puede derivar en acciones judiciales, embargos e inconvenientes al momento de escriturar. En el próximo resumen de gastos administrativos se adjuntará un listado con las partidas correspondientes a cada lote.</p>' +
-      '<div class="notice-section-title">Obras y Avances</div>' +
-      '<table class="notice-table"><thead><tr><th>Zona</th><th>Avances</th></tr></thead><tbody>' +
-        '<tr><td><strong>Zona Norte</strong></td><td>Edenor está realizando una revisión del sistema eléctrico con reemplazo de cajas deterioradas. Se avanzará en la mejora de tensión e instalación de luminarias LED.</td></tr>' +
-        '<tr><td><strong>Zona Sur</strong></td><td>Continúan las tareas de desmonte (finalización estimada: 1 mes). Luego se avanzará con limpieza y preparación del terreno. Sector con mayores dificultades por zonas inundables y cercanía al río Luján.</td></tr>' +
-      '</tbody></table>' +
-      '<div class="notice-section-title">Infraestructura y Seguridad</div>' +
-      '<p><strong>Infraestructura:</strong> La infraestructura del barrio se encuentra operativa en términos generales. Se identificaron tramos de cañerías dañadas a reparar y necesidad de mantenimiento en la planta de tratamiento.</p>' +
-      '<p><strong>Seguridad:</strong> Se logró una disminución en los episodios de intrusión. A partir de mayo se reducirá el servicio policial (se mantiene únicamente el móvil nocturno). Se continúa consolidando el cerco perimetral con obstáculos naturales en sectores vulnerables.</p>' +
-      '<div class="notice-section-title">Desarrollo y Obras Futuras</div>' +
-      '<div class="letter-highlight">' +
-        '• <strong>Zona Norte:</strong> posible escrituración durante el primer semestre del próximo año.<br>' +
-        '• <strong>Zona Sur:</strong> plazo estimado de desarrollo entre 18 y 24 meses.<br>' +
-        '• Se prevé rediseño del acceso al barrio con propuesta más amplia y moderna.<br>' +
-        '• Club House en etapa de planificación, sujeto a aprobaciones municipales.' +
-      '</div>' +
-      '<div class="notice-section-title">Convivencia y Reglamentación</div>' +
-      '<p>Se abordaron problemáticas vinculadas a la convivencia, principalmente el exceso de velocidad. Se evaluará la implementación de multas. Se comenzará a trabajar en la actualización del reglamento de convivencia.</p>' +
-      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
     '</div>'
   },
   {
@@ -887,61 +506,6 @@ var NOTICES = [
 ];
 
 var MESES = {
-  may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
-    saldoInicial:176781.83,
-    docs:[
-      {label:"Liquidación Mayo 2026 (PDF)",href:MAY_2026_PDFS.liquidacion,primary:true}
-    ],
-    egresos:{
-      sueldos:{label:"Sueldos y aportes al personal",items:[
-        ["Cano, Rodolfo","Fc. 001-0011",1030000],["Heflein, Gaston","Fc. 001-0005",1060000],
-        ["Jara, Julio E.","Fc. 001-0050",1030000],["Leiva, Miguel Angel","Fc. 001-0088",1900000],
-        ["Falco, Maria F.","Transferencia",3500000],["Guardia policial","Transferencia",1050000]]},
-      monotributo:{label:"Aportes Monotributo",items:[
-        ["Cano, Rodolfo","Monotributo 05-26",42386.74],["Heflein, Gaston","Monotributo 05-26",30758.31],
-        ["Jara, Julio E.","Monotributo 05-26",42386.74],["Leiva, Miguel Angel","Monotributo 05-26",56501.85]]},
-      seguros:{label:"Seguros",items:[
-        ["Seguro Responsabilidad Civil 5/11","Poliza nro. 271754",55584.40]]},
-      mantenimientos:{label:"Abonos por mantenimientos",items:[
-        ["Mantenimiento parques y jardines","Efectivo s/f",20000000],["Soda Belen SRL","Transferencia",44400],
-        ["Mayra Baño Quimico","Transferencia",55000],["Movistar","Fc. 0001-998939",8293.97]]},
-      otros:{label:"Otros mantenimientos y reparaciones",items:[
-        ["Nafta movil policial","Transferencia",382721.99],["Gastos librería","Transferencia",24000],
-        ["Nafta residuos","Transferencia",11001.04]]},
-      edenor:{label:"Impuestos y servicios",items:[
-        ["Ecoterra","Rbo.1900-00558",339600],["Cosefa","Fc. 015-0076338",11943.70],
-        ["Edenor AP1","Cta. 5176834871",32821.84],["Edenor AP2","Cta. 1879443257",7870.62],
-        ["Edenor AP3","Cta. 2858919000",94232.11],["Edenor CH","Cta. 1962427174",126696.97],
-        ["Edenor POR","Cta. 6146537920",166027.94],["Edenor SS","Cta. 7056963671",28536.38]]}
-    },
-    ingresos:[
-      ["Fragale, Guillermo","G16",200000],["Puletti, Alberto","Y38",200000],
-      ["Tutina SA","I12 I13 J05 J06",800000],["Jasminoy, Ignacio","C15 N11 N12",600000],
-      ["Novillo, Facundo","J04",600000],["Figueroa V, Julio","B16",400000],
-      ["Cacios, Jorge","B13",800000],["Najo, Susana","F08 F09 F10 AE03",800000],
-      ["Quintana, Juan Manuel","B01",200000],["Palpacelli, Carlos","A10 A11 A12 B07 B09 D02 J11 L12 M15 M16 M17",2200000],
-      ["Pastore, Luis - Rojas, Eva","A26",200000],["Manzelli, Natacha","I10 M02",400000],
-      ["Goñi, Uki","K06 K07",400000],["Giacchino, Diego","E19",200000],
-      ["Lago, Marcela","G12",400000],["Fidel, Sara","N09",200000],
-      ["Letang, Gabriel","M04",200000],["Goldschtein, Javier","O05",200000],
-      ["Calderon Oña, Juan Carlos","O03",200000],["Ottonello, Miguel","G13 G14",400000],
-      ["Lopez, Fernando","G09 M01",400000],["Weiss, Vernon","O07",200000],
-      ["Lago, Marcela","G12",400000],["Aldanondo, Matias","A02",800000],
-      ["Marquez, Andrea","C47",200000],["Lubnicky, Roberto","D20",200000],
-      ["Casaux Alsina, Santiago","Q04",200000],["Tello, German","O04",200000],
-      ["Valle, Marina","I15",200000],["Chamson, Axel","G10 G11 N09",600000],
-      ["Iturburu, Juan Pedro","E05 E06 I01 J01 J02",1000000],["Lastra, Julieta","E03 E04",1600000],
-      ["Meligeni, Claudio y Morales, Adriana","J08",200000],["Acuña, Hector Javier","K02",200000],
-      ["Blanco, Jorge","Y32",800000],["Garibaldi, Osvaldo","A01 F06",800000],
-      ["Beloli, Hugo","B02",200000],["Brun, Alejandro","F02 L01",800000],
-      ["Graziano, Gabriel","H13 N14",400000],["Brave, Marcelo","D05 D06 L08 L09",800000],
-      ["Castellarin, Gladys","C04",200000],["Colombo, Nicolas","B03 H17 H18",600000],
-      ["Malvichini, Andres","Y27",200000],["Stabile, Diego","L14",800000],
-      ["Burgueño, Analia Veronica","F11 F12 F13",590000],["Farias, Daniel","AC02 AC03 AC04 AC05 AC06",1000000],
-      ["Romano, Ezequiel","H10",200000],["Garcia, Santiago","H12",200000],
-      ["Aporte/Prestamo Desarrollador","",7500000]
-    ]
-  },
   abr26:{id:"abr26",mes:"Abril",anio:"2026",vto:"15/05/2026",periodo:"1 al 30/04/2026",status:"ok",
     docs:[
       {label:"Liquidación Abril 2026 (PDF)",href:APR_2026_PDFS.liquidacion,primary:true},
@@ -1226,7 +790,7 @@ var EXPENSE_MONTHS = [
 
 var lineChart;
 var expenseChart;
-var HOME_MONTH_KEYS = ['dic25', 'ene26', 'feb26', 'mar26', 'abr26', 'may26'];
+var HOME_MONTH_KEYS = ['dic25', 'ene26', 'feb26', 'mar26', 'abr26'];
 var trendData = {
   labels:[],
   egresos:[],
@@ -1392,33 +956,33 @@ function buildTrendData(){
 }
 
 function buildAprilExpenseBreakdown(){
-  var mes = MESES.may26;
-  if (!mes || !mes.egresos) return [];
+  var abril = MESES.abr26;
+  if (!abril || !abril.egresos) return [];
   return [
-    { label:'Mantenimiento', amount:mes.egresos.mantenimientos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#1d4f8f' },
-    { label:'Sueldos', amount:mes.egresos.sueldos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#2d73ca' },
-    { label:'Otros', amount:mes.egresos.otros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#5a9cc6' },
-    { label:'Servicios', amount:mes.egresos.edenor.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#88a88b' },
-    { label:'Monotributo', amount:mes.egresos.monotributo.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#bea77f' },
-    { label:'Seguros', amount:mes.egresos.seguros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#4b8f90' }
+    { label:'Mantenimiento', amount:abril.egresos.mantenimientos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#1d4f8f' },
+    { label:'Sueldos', amount:abril.egresos.sueldos.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#2d73ca' },
+    { label:'Otros', amount:abril.egresos.otros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#5a9cc6' },
+    { label:'Servicios', amount:abril.egresos.edenor.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#88a88b' },
+    { label:'Monotributo', amount:abril.egresos.monotributo.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#bea77f' },
+    { label:'Seguros', amount:abril.egresos.seguros.items.reduce(function(sum, row){ return sum + (row[2] || 0); }, 0), color:'#4b8f90' }
   ];
 }
 
 function renderHomeDashboard(){
   var months = buildTrendData();
-  var mayo = getMonthSummary('may26');
+  var abril = getMonthSummary('abr26');
   var totalEgresos = months.reduce(function(sum, item){ return sum + item.egresos; }, 0);
   var totalIngresos = months.reduce(function(sum, item){ return sum + item.ingresos; }, 0);
   var lotesAlDia = CC_CURRENT.lotes.filter(function(item){ return item.deuda === 0; }).length;
   var breakdown = buildAprilExpenseBreakdown();
   var breakdownTotal = breakdown.reduce(function(sum, item){ return sum + item.amount; }, 0);
   var map = [
-    ['home-abril-egresos', compactFmt(mayo.egresos)],
-    ['home-abril-ingresos', compactFmt(mayo.ingresos)],
-    ['home-abril-saldo', compactFmt(mayo.saldo)],
+    ['home-abril-egresos', compactFmt(abril.egresos)],
+    ['home-abril-ingresos', compactFmt(abril.ingresos)],
+    ['home-abril-saldo', compactFmt(abril.saldo)],
     ['home-total-egresos', fmt(totalEgresos)],
     ['home-total-ingresos', fmt(totalIngresos)],
-    ['home-saldo-acumulado', signedFmt(mayo.saldo)],
+    ['home-saldo-acumulado', signedFmt(abril.saldo)],
     ['home-lotes-dia', lotesAlDia + ' / ' + CC_CURRENT.lotes.length]
   ];
   map.forEach(function(entry){
@@ -1443,7 +1007,7 @@ function renderHomeDashboard(){
 function renderLiquidationCards(){
   var root = document.getElementById('mgrid');
   if (!root) return;
-  var keys = ['may26', 'abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
+  var keys = ['abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
   root.innerHTML = keys.map(function(key){
     var d = MESES[key];
     var egr = ce(d);
@@ -1602,7 +1166,8 @@ function renderCurrentAccountMeta(){
   if (diaEl) diaEl.textContent = alDia;
   if (deudaEl) deudaEl.textContent = conDeuda;
   if (docsRoot) {
-    docsRoot.innerHTML = '<a class="doc-action primary" href="' + MAY_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
+    docsRoot.innerHTML = '<a class="doc-action primary" href="' + APR_2026_PDFS.liquidacion + '" target="_blank" rel="noopener">Liquidación PDF</a>' +
+      '<a class="doc-action" href="' + APR_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuentas corrientes PDF</a>';
   }
 }
 
@@ -1908,14 +1473,4 @@ document.addEventListener('DOMContentLoaded', function(){
   initCharts();
   resizeCharts();
   syncChromeState();
-
-  var slides = document.querySelectorAll('.hero-slide');
-  if(slides.length > 1){
-    var current = 0;
-    setInterval(function(){
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 5000);
-  }
 });
