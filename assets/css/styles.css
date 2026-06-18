@@ -2188,7 +2188,7 @@
       box-shadow:0 10px 20px rgba(7,18,32,.22), inset 0 1px 0 rgba(255,255,255,.18);
       transform:translateY(-1px);
     }
-    #page-content{padding-bottom:106px}
+    #page-content{padding-bottom:24px}
   }
 
   @media(max-width:420px){
