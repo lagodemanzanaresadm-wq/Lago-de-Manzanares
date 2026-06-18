@@ -2193,7 +2193,7 @@
 
   @media(max-width:420px){
     .hero-banner{min-height:200px}
-    .hero-text{left:0;right:0;bottom:0;padding:14px 16px}
+    .hero-text{left:50%;right:auto;bottom:auto;top:50%;transform:translate(-50%,-50%);padding:14px 16px}
     .hero-text h1{font-size:22px}
     .home-action-card,.mini-chart,.contact-card,.contact-info-card{border-radius:14px}
     .toast-stack{
