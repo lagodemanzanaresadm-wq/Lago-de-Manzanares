@@ -934,7 +934,7 @@
   }
   .home-finance-grid{
     display:grid;
-    grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);
+    grid-template-columns:1fr;
     gap:16px;
     align-items:start;
   }
