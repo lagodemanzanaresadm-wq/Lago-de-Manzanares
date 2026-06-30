@@ -942,14 +942,66 @@ var NOTICES = [
 
 var MESES = {
   jun26:{id:"jun26",mes:"Junio",anio:"2026",vto:"15/07/2026",periodo:"1 al 30/06/2026",status:"ok",
-    saldoInicial:0,
+    saldoInicial:136017.23,
     docs:[
       {label:"Liquidación Junio 2026 (PDF)",href:JUN_2026_PDFS.liquidacion,primary:true},
       {label:"Estado de cuenta propietarios (PDF)",href:JUN_2026_PDFS.estado}
     ],
-    egresos:{},
-    ingresos:[],
-    resumen:{egresos:0,ingresos:0,saldo:0}
+    egresos:{
+      sueldos:{label:"Sueldos y aportes al personal",items:[
+        ["Cano, Rodolfo","Fc. 001-0012",1566700],["Heflein, Gaston","Fc. 001-0006",1566700],
+        ["Jara, Julio E.","Fc. 001-0051",1500000],["Leiva, Miguel Angel","Fc. 001-0089",2741700],
+        ["Falco, Maria F.","Transferencia",5250000]]},
+      monotributo:{label:"Aportes Monotributo",items:[
+        ["Cano, Rodolfo","Monotributo 06-26",42386.74],["Heflein, Gaston","Monotributo 06-26",30758.31],
+        ["Jara, Julio E.","Monotributo 06-26",42386.74],["Leiva, Miguel Angel","Monotributo 06-26",56501.85]]},
+      seguros:{label:"Seguros",items:[
+        ["Seguro Responsabilidad Civil 6/11","Poliza nro. 271754",55584.40],
+        ["Seguro Accidentes Personales 2/2","Poliza nro. 10455954",36931.00]]},
+      mantenimientos:{label:"Abonos por mantenimientos",items:[
+        ["Mantenimiento parques y jardines","Efectivo s/f",20000000],["Soda Belen SRL","Transferencia",59200],
+        ["Mayra Baño Quimico","Transferencia",55000],["Celular administracion","Fc. 0002-089877",8293.97],
+        ["Abono web virtual","Transferencia",100259]]},
+      otros:{label:"Otros mantenimientos y reparaciones",items:[
+        ["Gastos librería","Transferencia MP",112300]]},
+      edenor:{label:"Impuestos y servicios",items:[
+        ["Ecoterra","Rbo.1900-000626",370200],["Cosefa","Fc. 015-00076865",12115.07],
+        ["Edenor AP1","Cta. 5176834871",37743.69],["Edenor AP2","Cta. 1879443257",7204.14],
+        ["Edenor AP3","Cta. 2858919000",78574.38],["Edenor CH","Cta. 1962427174",139456.37],
+        ["Edenor POR","Cta. 6146537920",342330.21],["Edenor SS","Cta. 7056963671",27985.56]]}
+    },
+    ingresos:[
+      ["Cacios, Jorge","B13",200000],["F. Villamayor, Julio","B16",400000],
+      ["Blanco, Jorge","Y32",200000],["Fragale, Guillermo","G16",200000],
+      ["Puletti, Alberto","Y38",200000],["Regis, Pablo","G01",1032000],
+      ["Tutina SA","I12 I13 J05 J06",800000],["Tello, German","O04",200000],
+      ["Chamson, Axel","G09 G11 N09",600000],["Candiotti, Florencia","Y11",1000000],
+      ["Rojas, Eva","A26",200000],["Meligeni, Antonio","J08",200000],
+      ["Novillo Almada, Facundo","J04",600000],["Marquez, Andrea","C47",200000],
+      ["Fidel, Adriana","N08",200000],["Stabile, Diego","L14",200000],
+      ["Ottonello, Miguel Angel","G13 G14",400000],["Pallia, Federico","I10 M02",400000],
+      ["Letang, Gabriel","M04",200000],["Aldanondo, Matias","A02",200000],
+      ["Giacchino, Diego","E19",200000],
+      ["Palpacelli, Carlos","A10 A11 A12 B07 B09 D02 J11 L12 M15 M16 M17",2200000],
+      ["Goñi, Uki","K06 K07",400000],["Stabile, Virginia","F02",400000],
+      ["Brun, Tomas","L01",400000],["Valle, Marina","I15",200000],
+      ["Lopez, Fernando","G10 M01",400000],["Brave, Marcelo","D05 D06 L08 L09",800000],
+      ["Quintana, Juan Manuel","B01",300000],["Calderon Oña, Juan Carlos","O03",200000],
+      ["Weiss, Vernon","O07",200000],["Najo, Susana","F08 F09 F10 AE03",800000],
+      ["Goldschtein, Javier","O05",200000],["Acuña, Hector","K02",200000],
+      ["Aguilera, Omar Ariel","Y39",200000],["Lubnicki, Roberto","D20",200000],
+      ["Iskowitz, Sergio","N08",200000],["Garibaldi, Osvaldo","A01 F06",800000],
+      ["Garcia, Santiago","C43 H12",400000],["Iturburu, Juan Pedro","E05 E06 I01 J01 J02",1000000],
+      ["Stabile, Mauro","F11 F12 F13",600000],["Pascual, Gonzalo","B10 B11 B12",2400000],
+      ["Lago, Marcela","G12",400000],["Farias, Daniel","AC02 AC03 AC04 AC05 AC06",1000000],
+      ["Beloli, Hugo","B02",200000],["Nogues, Martin","E17",1000000],
+      ["Greco, Hugo","F19",1000000],["Gardey, Ricardo","E18",1000000],
+      ["Castellarin, Gladys","C04",400000],["Nogues, Martin (2)","E17",2400000],
+      ["Greco, Hugo (2)","F19",2400000],["Gardey, Ricardo (2)","E18",2400000],
+      ["Aguilera, Omar Ariel (2)","Y39",200000],["Aguilera, Omar Ariel (3)","Y39",883265],
+      ["Casaux Alsina, Santiago","Q04",200000],["Garat, Maximo","Y09",1032000],
+      ["Jasminoy, Ignacio","C15 N11 N12",600000]
+    ]
   },
   may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
     saldoInicial:176781.83,
