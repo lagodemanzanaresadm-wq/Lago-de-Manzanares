@@ -944,10 +944,11 @@ var MESES = {
   jun26:{id:"jun26",mes:"Junio",anio:"2026",vto:"15/07/2026",periodo:"1 al 30/06/2026",status:"ok",
     saldoInicial:0,
     docs:[
-      {label:"Liquidación Junio 2026 (PDF)",href:JUN_2026_PDFS.liquidacion,primary:true}
+      {label:"Liquidación Junio 2026 (PDF)",href:JUN_2026_PDFS.liquidacion,primary:true},
+      {label:"Estado de cuenta propietarios (PDF)",href:JUN_2026_PDFS.estado}
     ],
     egresos:{},
-    ingresos:{},
+    ingresos:[],
     resumen:{egresos:0,ingresos:0,saldo:0}
   },
   may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
