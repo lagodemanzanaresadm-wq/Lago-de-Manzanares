@@ -1,5 +1,9 @@
 'use strict';
 
+var JUN_2026_PDFS = {
+  carta:'assets/docs/jun-2026/carta-gastos-administrativos-junio-2026.pdf'
+};
+
 var MAY_2026_PDFS = {
   carta:'assets/docs/may-2026/carta-gastos-administrativos-mayo-2026.pdf',
   estado:'assets/docs/may-2026/estado-de-cuenta-propietarios-mayo-2026.pdf',
@@ -23,6 +27,24 @@ var PAGE_TITLES = {
 };
 
 var LIQUIDACIONES = [
+  {
+    id:'gm26jun',
+    title:'Carta de Gastos Adm. - Liquidación Junio 2026',
+    date:'Buenos Aires, 1 de julio de 2026',
+    due:'Venc. 15/07/2026',
+    amount:'$ 200.000',
+    status:'Vigente',
+    bodyHtml:'<div class="letter-content">' +
+      '<div class="letter-kicker">Estimados propietarios:</div>' +
+      '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de junio de 2026, con vencimiento el día 15 de julio de 2026.</p>' +
+      '<p>En los archivos adjuntos encontrarán la siguiente documentación:</p>' +
+      '<ul><li>Liquidación correspondiente al período junio 2026.</li><li>Estado de cuenta de cada lote.</li><li>Partidas correspondientes a ARBA de cada lote.</li><li>Instructivo con los pasos para consultar y/o regularizar la situación ante ARBA.</li><li>Informe actualizado sobre los avances de obra.</li></ul>' +
+      '<div class="letter-highlight"><strong>Importe Junio 2026</strong>$ 200.000 — doscientos mil pesos</div>' +
+      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria — <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
+      '<div class="doc-actions"><a class="doc-action primary" href="' + JUN_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
   {
     id:'gm26may',
     title:'Carta de Gastos Adm. - Liquidación Mayo 2026',
