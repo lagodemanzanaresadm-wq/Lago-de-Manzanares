@@ -1506,7 +1506,7 @@ function renderHomeDashboard(){
 function renderLiquidationCards(){
   var root = document.getElementById('mgrid');
   if (!root) return;
-  var keys = ['may26', 'abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
+  var keys = ['jun26', 'may26', 'abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
   root.innerHTML = keys.map(function(key){
     var d = MESES[key];
     var egr = ce(d);
