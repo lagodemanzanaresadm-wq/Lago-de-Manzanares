@@ -1,0 +1,19 @@
+{
+  "name": "Lago de Manzanares",
+  "short_name": "Lago MZN",
+  "description": "Portal de administración - Club de Campo Lago de Manzanares",
+  "start_url": "/Lago-de-Manzanares/",
+  "scope": "/Lago-de-Manzanares/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#132c4c",
+  "icons": [
+    {
+      "src": "assets/images/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
