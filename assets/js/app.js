@@ -1189,7 +1189,7 @@ var MESES = {
       ["Blanco, Jorge","Y32",200000],["Fragale, Guillermo","G16",200000],
       ["Puletti, Alberto","Y38",200000],["Regis, Pablo","G01",1032000],
       ["Tutina SA","I12 I13 J05 J06",800000],["Tello, German","O04",200000],
-      ["Chamson, Axel","G09 G11 N09",600000],["Candiotti, Florencia","Y11",800000],
+      ["Chamson, Axel","G09 G11 N09",600000],["Candiotti, Florencia","Y11",1000000],
       ["Rojas, Eva","A26",200000],["Meligeni, Antonio","J08",200000],
       ["Novillo Almada, Facundo","J04",600000],["Marquez, Andrea","C47",200000],
       ["Fidel, Adriana","N08",200000],["Stabile, Diego","L14",200000],
