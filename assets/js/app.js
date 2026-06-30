@@ -1,7 +1,9 @@
 'use strict';
 
 var JUN_2026_PDFS = {
-  carta:'assets/docs/jun-2026/carta-gastos-administrativos-junio-2026.pdf'
+  carta:'assets/docs/jun-2026/carta-gastos-administrativos-junio-2026.pdf',
+  liquidacion:'assets/docs/jun-2026/liquidacion-gastos-junio-2026.pdf',
+  estado:'assets/docs/jun-2026/estado-de-cuenta-propietarios-junio-2026.pdf'
 };
 
 var MAY_2026_PDFS = {
@@ -909,6 +911,15 @@ var NOTICES = [
 ];
 
 var MESES = {
+  jun26:{id:"jun26",mes:"Junio",anio:"2026",vto:"15/07/2026",periodo:"1 al 30/06/2026",status:"ok",
+    saldoInicial:0,
+    docs:[
+      {label:"Liquidación Junio 2026 (PDF)",href:JUN_2026_PDFS.liquidacion,primary:true}
+    ],
+    egresos:{},
+    ingresos:{},
+    resumen:{egresos:0,ingresos:0,saldo:0}
+  },
   may26:{id:"may26",mes:"Mayo",anio:"2026",vto:"15/06/2026",periodo:"1 al 31/05/2026",status:"ok",
     saldoInicial:176781.83,
     docs:[
@@ -1624,7 +1635,7 @@ function renderCurrentAccountMeta(){
   if (diaEl) diaEl.textContent = alDia;
   if (deudaEl) deudaEl.textContent = conDeuda;
   if (docsRoot) {
-    docsRoot.innerHTML = '<a class="doc-action primary" href="' + MAY_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
+    docsRoot.innerHTML = '<a class="doc-action primary" href="' + JUN_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
   }
 }
 
