@@ -769,7 +769,7 @@ var CC_JUN26 = {
     {lote:"N-15",nombre:"Villavicencio, Juan Martin",deuda:1091264},
     {lote:"O-3",nombre:"Calderon Oña, Juan Carlos",deuda:0},
     {lote:"O-4",nombre:"Tello, German",deuda:0},
-    {lote:"O-5",nombre:"Goldschtein, Javier",deuda:233971},
+    {lote:"O-5",nombre:"Goldschtein, Javier",deuda:0},
     {lote:"O-6",nombre:"Diaz, Paula Mariana",deuda:1091264},
     {lote:"O-7",nombre:"Weiss, Vernon Roy",deuda:0},
     {lote:"O-8",nombre:"Bunge, Diego",deuda:1091264},
