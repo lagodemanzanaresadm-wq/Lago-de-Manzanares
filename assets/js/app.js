@@ -1474,7 +1474,7 @@ var MESES = {
       sueldos:{label:"Sueldos y aportes al personal",items:[
         ["Cano, Rodolfo","Fc. 001-0012",1566700],["Heflein, Gaston","Fc. 001-0006",1566700],
         ["Jara, Julio E.","Fc. 001-0051",1500000],["Leiva, Miguel Angel","Fc. 001-0089",2741700],
-        ["Falco, Maria F.","Transferencia",5250000]]},
+        ["Honorarios administracion","Transferencia",5250000]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 06-26",42386.74],["Heflein, Gaston","Monotributo 06-26",30758.31],
         ["Jara, Julio E.","Monotributo 06-26",42386.74],["Leiva, Miguel Angel","Monotributo 06-26",56501.85]]},
@@ -1534,7 +1534,7 @@ var MESES = {
       sueldos:{label:"Sueldos y aportes al personal",items:[
         ["Cano, Rodolfo","Fc. 001-0011",1030000],["Heflein, Gaston","Fc. 001-0005",1060000],
         ["Jara, Julio E.","Fc. 001-0050",1030000],["Leiva, Miguel Angel","Fc. 001-0088",1900000],
-        ["Falco, Maria F.","Transferencia",3500000],["Guardia policial","Transferencia",1050000]]},
+        ["Honorarios administracion","Transferencia",3500000],["Guardia policial","Transferencia",1050000]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 05-26",42386.74],["Heflein, Gaston","Monotributo 05-26",30758.31],
         ["Jara, Julio E.","Monotributo 05-26",42386.74],["Leiva, Miguel Angel","Monotributo 05-26",56501.85]]},
@@ -1590,7 +1590,7 @@ var MESES = {
       sueldos:{label:"Sueldos y aportes al personal",items:[
         ["Cano, Rodolfo","Fc. 001-0010",1066800],["Heflein, Gaston","Fc. 001-0004",1066800],
         ["Jara, Julio E.","Fc. 001-0049",1066800],["Leiva, Miguel Angel","Fc. 001-0087",1863400],
-        ["Falco, M. Fernanda","Transferencia",3000000],["Guardia policial","Transferencia",5472000]]},
+        ["Honorarios administracion","Transferencia",3000000],["Guardia policial","Transferencia",5472000]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 04-26",42386.74],["Heflein, Gaston","Monotributo 04-26",30758.31],
         ["Jara, Julio E.","Monotributo 04-26",42386.74],["Leiva, Miguel Angel","Monotributo 04-26",56501.85]]},
@@ -1659,7 +1659,7 @@ var MESES = {
       sueldos:{label:"Sueldos y aportes al personal",items:[
         ["Cano, Rodolfo","Fc. 001-0009",930000],["Heflein, Gaston","Fc. 001-0003",930000],
         ["Jara, Julio E.","Fc. 001-0048",930000],["Leiva, Miguel Angel","Fc. 001-0086",1600000],
-        ["Falco, M. Fernanda","Transferencia",3000000],["Guardia policial","Transferencia",5867948.40]]},
+        ["Honorarios administracion","Transferencia",3000000],["Guardia policial","Transferencia",5867948.40]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 03-26",42386.74],["Heflein, Gaston","IIBB/Monotributo 03-26",30758.31],
         ["Jara, Julio E.","Monotributo 03-26",42386.74],["Leiva, Miguel Angel","Monotributo 03-26",56501.85]]},
@@ -1702,7 +1702,7 @@ var MESES = {
       sueldos:{label:"Sueldos y aportes al personal",items:[
         ["Cano, Rodolfo","Fc. 001-0008",960000],["Cano, Rodolfo (rondin nocturno)","Transferencia",725000],
         ["Heflein, Gaston","Fc. 001-0002",960000],["Jara, Julio E.","Fc. 001-0047",960000],
-        ["Leiva, Miguel Angel","Fc. 001-0085",1600000],["Falco, M. Fernanda","Transferencia",3000000],
+        ["Leiva, Miguel Angel","Fc. 001-0085",1600000],["Honorarios administracion","Transferencia",3000000],
         ["Guardia policial","Transferencia",3489050.40]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 02-26",42386.74],["Heflein, Gaston","Monotributo 01 y 02-26",20614.99],
@@ -1747,7 +1747,7 @@ var MESES = {
         ["Cano, Rodolfo (rondin - saldo dic)","",210000],["Heflein, Gaston","",450000],
         ["Jara, Julio E.","Fc. 001-0046",900000],["Leiva, Miguel Angel","Fc. 001-0083",1550000],
         ["Leiva, M.A. (recoleccion residuos dic-25)","",50000],
-        ["Villareal, Ramon","Fc. 001-0008",900000],["Falco, M. Fernanda","",2500000]]},
+        ["Villareal, Ramon","Fc. 001-0008",900000],["Honorarios administracion","",2500000]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 01-26",37085.74],
         ["Jara, Julio E.","Monotributo 12-25 y 01-26",74171.48],
@@ -1785,7 +1785,7 @@ var MESES = {
       sueldos:{label:"Sueldos y aportes al personal",items:[
         ["Cano, Rodolfo","Fc. 001-0006",900000],["Jara, Julio E.","Fc. 001-0045",900000],
         ["Leiva, Miguel Angel","Fc. 001-0082",1500000],["Villareal, Ramon","Fc. 001-0007",900000],
-        ["Falco, M. Fernanda","",1250000]]},
+        ["Honorarios administracion","",1250000]]},
       monotributo:{label:"Aportes Monotributo",items:[
         ["Cano, Rodolfo","Monotributo 12-25",37085.74],["Jara, Julio E.","Monotributo 12-25",19239.97],
         ["Leiva, Miguel Angel","Monotributo 12-25",37085.74],["Villareal, Ramon","Monotributo 12-25",37085.74]]},
