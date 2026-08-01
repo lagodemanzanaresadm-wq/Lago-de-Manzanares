@@ -1403,7 +1403,7 @@ var NOTICES = [
 ];
 
 var MESES = {
-  jul26:{id:"jul26",mes:"Julio",anio:"2026",vto:"15/08/2026",periodo:"1 al 31/07/2026",status:"ok",
+  jul26:{id:"jul26",mes:"Julio",anio:"2026",vto:"15/08/2026",periodo:"1 al 31/07/2026",status:"ok",badge:"Vigente",
     saldoInicial:1379901.80,
     docs:[
       {label:"Liquidación Julio 2026 (PDF)",href:JUL_2026_PDFS.liquidacion,primary:true},
@@ -2088,7 +2088,7 @@ function renderLiquidationCards(){
     var ing = ci(d);
     var saldo = d.saldoInicial + ing - egr;
     return '<div class="mcard" data-liquid-card="' + key + '">' +
-      '<div class="mc-top"><div><div class="mc-mo">' + d.mes + '</div><div class="mc-yr">' + d.anio + '</div></div><span class="mbadge ok">Cerrado</span></div>' +
+      '<div class="mc-top"><div><div class="mc-mo">' + d.mes + '</div><div class="mc-yr">' + d.anio + '</div></div><span class="mbadge ok">' + (d.badge || 'Cerrado') + '</span></div>' +
       '<div class="mc-body">' +
         '<div class="mrow"><span>Vencimiento</span><strong>' + d.vto + '</strong></div>' +
         '<div class="mrow"><span>Total egresos</span><strong>' + fmt(egr) + '</strong></div>' +
