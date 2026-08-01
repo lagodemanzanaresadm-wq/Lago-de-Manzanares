@@ -1069,21 +1069,6 @@ var NOTICES = [
     '</div>'
   },
   {
-    id:'cavance_jun26',
-    title:'Informe Mensual de Trabajos - Junio 2026',
-    date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
-    tag:'Informe de avance de obras',
-    pdfHref:'assets/docs/notices/zanara-informe-obra-junio-2026.pdf',
-    desc:'Obras en ejecución y obras previstas — Etapas Norte y Sur. Junio 2026.',
-    bodyHtml:'<div class="letter-content">' +
-      '<span class="notice-tag">Informe de avance de obras</span>' +
-      '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Junio 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
-      '<p>El informe cubre obras en ejecución y obras previstas en las Etapas Norte y Sur del barrio.</p>' +
-      '<div class="doc-actions"><a class="doc-action primary" href="assets/docs/notices/zanara-informe-obra-junio-2026.pdf" target="_blank" rel="noopener">Ver informe completo PDF</a></div>' +
-      '<div class="letter-signature">ZANARA — Desarrollo y Gerenciamiento de Construcción</div>' +
-    '</div>'
-  },
-  {
     id:'arba_jun26',
     title:'Partidas ARBA',
     date:'Administración',
@@ -1099,6 +1084,21 @@ var NOTICES = [
         '<a class="doc-action" href="assets/docs/notices/instructivo-pago-arba-junio-2026.pdf" target="_blank" rel="noopener">Instructivo pago ARBA PDF</a>' +
       '</div>' +
       '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
+  {
+    id:'cavance_jun26',
+    title:'Informe Mensual de Trabajos - Junio 2026',
+    date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
+    tag:'Informe de avance de obras',
+    pdfHref:'assets/docs/notices/zanara-informe-obra-junio-2026.pdf',
+    desc:'Obras en ejecución y obras previstas — Etapas Norte y Sur. Junio 2026.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Informe de avance de obras</span>' +
+      '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Junio 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
+      '<p>El informe cubre obras en ejecución y obras previstas en las Etapas Norte y Sur del barrio.</p>' +
+      '<div class="doc-actions"><a class="doc-action primary" href="assets/docs/notices/zanara-informe-obra-junio-2026.pdf" target="_blank" rel="noopener">Ver informe completo PDF</a></div>' +
+      '<div class="letter-signature">ZANARA — Desarrollo y Gerenciamiento de Construcción</div>' +
     '</div>'
   },
   {
@@ -1403,7 +1403,7 @@ var NOTICES = [
 ];
 
 var MESES = {
-  jul26:{id:"jul26",mes:"Julio",anio:"2026",vto:"15/08/2026",periodo:"1 al 31/07/2026",status:"ok",badge:"Vigente",
+  jul26:{id:"jul26",mes:"Julio",anio:"2026",vto:"15/08/2026",periodo:"1 al 31/07/2026",status:"ok",badge:"Cerrado",
     saldoInicial:1379901.80,
     docs:[
       {label:"Liquidación Julio 2026 (PDF)",href:JUL_2026_PDFS.liquidacion,primary:true},
