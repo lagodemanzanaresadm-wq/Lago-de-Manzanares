@@ -1073,14 +1073,14 @@ var NOTICES = [
     title:'Partidas ARBA',
     date:'Administración',
     tag:'Impuestos',
-    pdfHref:'assets/docs/notices/partidas-arba-julio-2026.pdf',
+    pdfHref:'assets/docs/notices/partidas-arba-julio-2026.pdf?v=2',
     desc:'Partidas correspondientes a ARBA de cada lote. Instrucciones para consultar y regularizar la situación ante ARBA.',
     bodyHtml:'<div class="letter-content">' +
       '<span class="notice-tag">Impuestos</span>' +
       '<div class="letter-kicker">Estimados propietarios:</div>' +
       '<p>Adjuntamos las partidas correspondientes a <strong>ARBA</strong> de cada lote, junto con el instructivo para consultar y/o regularizar la situación impositiva ante el organismo.</p>' +
       '<div class="doc-actions">' +
-        '<a class="doc-action primary" href="assets/docs/notices/partidas-arba-julio-2026.pdf" target="_blank" rel="noopener">Ver partidas ARBA PDF</a>' +
+        '<a class="doc-action primary" href="assets/docs/notices/partidas-arba-julio-2026.pdf?v=2" target="_blank" rel="noopener">Ver partidas ARBA PDF</a>' +
         '<a class="doc-action" href="assets/docs/notices/instructivo-pago-arba-junio-2026.pdf" target="_blank" rel="noopener">Instructivo pago ARBA PDF</a>' +
       '</div>' +
       '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
