@@ -2549,7 +2549,7 @@ function renderCurrentAccountMeta(){
   if (diaEl) diaEl.textContent = alDia;
   if (deudaEl) deudaEl.textContent = conDeuda;
   if (docsRoot) {
-    docsRoot.innerHTML = '<a class="doc-action primary" href="' + JUN_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
+    docsRoot.innerHTML = '<a class="doc-action primary" href="' + AGO_2026_PDFS.estado + '" target="_blank" rel="noopener">Estado de cuenta propietarios PDF</a>';
   }
 }
 
