@@ -1,7 +1,9 @@
 'use strict';
 
 var AGO_2026_PDFS = {
-  carta:'assets/docs/ago-2026/carta-gastos-administrativos-agosto-2026.pdf'
+  carta:'assets/docs/ago-2026/carta-gastos-administrativos-agosto-2026.pdf',
+  liquidacion:'assets/docs/ago-2026/liquidacion-gastos-agosto-2026.pdf',
+  estado:'assets/docs/ago-2026/estado-de-cuenta-propietarios-agosto-2026.pdf'
 };
 
 var JUL_2026_PDFS = {
@@ -1075,7 +1077,212 @@ var CC_JUL26 = {
   ]
 };
 
-var CC_CURRENT = CC_JUL26;
+var CC_AGO26 = {
+  periodo:'Agosto 2026',
+  lotes:[
+    {lote:"A-1",nombre:"Garibaldi, Osvaldo",deuda:0},
+    {lote:"A-2",nombre:"Aldanondo, Matias",deuda:0},
+    {lote:"A-10",nombre:"Palpacelli, Carlos Ariel",deuda:516250},
+    {lote:"A-11",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"A-12",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"A-15",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"A-16",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"A-17",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"A-25",nombre:"Rossi, Marclo y Erut M. de los Angeles",deuda:1642845},
+    {lote:"A-26",nombre:"Rojas, Eva Celina y Luis Pastore",deuda:0},
+    {lote:"A-29",nombre:"Izbisky, Mario Arian",deuda:1642845},
+    {lote:"A-32",nombre:"Gagliardo, Renato Lorenzo",deuda:1642845},
+    {lote:"A-33",nombre:"Gagliardo, Ruben Diego",deuda:1642845},
+    {lote:"A-36",nombre:"Woinilowicz, Jorge Eduardo",deuda:1642845},
+    {lote:"B-1",nombre:"Quintana, Juan Manuel",deuda:0},
+    {lote:"B-2",nombre:"Beloli, Hugo Eduardo Claudio",deuda:759581},
+    {lote:"B-3",nombre:"Colombo Nicolas",deuda:208000},
+    {lote:"B-7",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"B-8",nombre:"Fernandez, Ricardo",deuda:0},
+    {lote:"B-9",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"B-10",nombre:"Pascual, Gonzalo",deuda:0},
+    {lote:"B-11",nombre:"Pascual, Gonzalo",deuda:0},
+    {lote:"B-12",nombre:"Pascual, Gonzalo",deuda:0},
+    {lote:"B-13",nombre:"Cacios, Jorge Jose Eduardo",deuda:0},
+    {lote:"B-15",nombre:"Verardo, Maria Laura",deuda:1642845},
+    {lote:"B-16",nombre:"Villamayor Figueroa, Julio",deuda:0},
+    {lote:"B-19",nombre:"Bivort, Marcela",deuda:1642845},
+    {lote:"B-20",nombre:"Baldini, Camilo",deuda:1642845},
+    {lote:"C-4",nombre:"Bardas Jorge Eduardo y Castellarin Gladys",deuda:0},
+    {lote:"C-7",nombre:"Elizalde, Hernan Ricardo",deuda:1642845},
+    {lote:"C-8",nombre:"Goldaracena, Isabel Maria",deuda:1642845},
+    {lote:"C-9",nombre:"Moyano, Walter Alejandro",deuda:1642845},
+    {lote:"C-15",nombre:"Jasminoy, Ignacio",deuda:0},
+    {lote:"C-20",nombre:"Saponare, Jaime",deuda:1642845},
+    {lote:"C-31",nombre:"Caputo, Monica Maria",deuda:1642845},
+    {lote:"C-32",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"C-33",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"C-43",nombre:"Paz, Ignacio Mario",deuda:1209872},
+    {lote:"C-45",nombre:"Semorile, Alejandro Adolfo",deuda:1642845},
+    {lote:"C-46",nombre:"Semorile, Alejandro Adolfo",deuda:1642845},
+    {lote:"C-47",nombre:"Marquez, Graciela",deuda:0},
+    {lote:"C-48",nombre:"Garat, Juan Martin",deuda:1434845},
+    {lote:"C-49",nombre:"Garat, Gaston",deuda:1434845},
+    {lote:"D-2",nombre:"Palpacelli, Carlos Ariel",deuda:516250},
+    {lote:"D-5",nombre:"Brave, Marcelo",deuda:759581},
+    {lote:"D-6",nombre:"Brave, Marcelo",deuda:759581},
+    {lote:"D-11",nombre:"Ginepro, Maria Sol y Sario, Rodrigo",deuda:1642845},
+    {lote:"D-20",nombre:"Walpen, Karina Rosana",deuda:0},
+    {lote:"E-1",nombre:"Lansa SA",deuda:1642845},
+    {lote:"E-2",nombre:"Sartori, Maria Adela",deuda:1642845},
+    {lote:"E-3",nombre:"Lastra, Patricio",deuda:0},
+    {lote:"E-4",nombre:"Lastra, Patricio",deuda:208000},
+    {lote:"E-5",nombre:"Sartori, Maria Clemencia",deuda:0},
+    {lote:"E-6",nombre:"Sartori, Maria Clemencia",deuda:0},
+    {lote:"E-14",nombre:"Caputo, Monica Maria",deuda:1642845},
+    {lote:"E-15",nombre:"Vazquez, Roberto Gustavo",deuda:1642845},
+    {lote:"E-16",nombre:"Lazaro Clauser, Alicia Ema",deuda:1642845},
+    {lote:"E-17",nombre:"Nogues, Martin Alejandro",deuda:0},
+    {lote:"E-18",nombre:"Gardey, Ricardo Horacio",deuda:0},
+    {lote:"E-19",nombre:"Giacchino, Diego",deuda:208000},
+    {lote:"F-2",nombre:"Brun Alejandro y Stabile Virginia",deuda:0},
+    {lote:"F-4",nombre:"Hughes, Felipe",deuda:1642845},
+    {lote:"F-5",nombre:"Elizalde, Hernan",deuda:1642845},
+    {lote:"F-6",nombre:"Garibaldi, Osvaldo",deuda:0},
+    {lote:"F-7",nombre:"Leonardi, Carlos",deuda:1642845},
+    {lote:"F-8",nombre:"Najo, Susana",deuda:0},
+    {lote:"F-9",nombre:"Najo, Susana",deuda:0},
+    {lote:"F-10",nombre:"Bitenski, Carlos Alberto",deuda:1642845},
+    {lote:"F-11",nombre:"Stabile, Mauro",deuda:263186},
+    {lote:"F-12",nombre:"Stabile, Mauro",deuda:263186},
+    {lote:"F-13",nombre:"Stabile, Mauro",deuda:263186},
+    {lote:"F-14",nombre:"Liberatore Diana y Rotaeche Luis",deuda:0},
+    {lote:"F-15",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"F-16",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"F-19",nombre:"Greco, Hugo Daniel",deuda:0},
+    {lote:"F-21",nombre:"Rotaeche, Luis Maria",deuda:0},
+    {lote:"G-1",nombre:"Regis, Pablo / Jimenez, Giselle",deuda:0},
+    {lote:"G-2",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"G-3",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"G-4",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"G-5",nombre:"Kirschenbaum, Hector y Veronica",deuda:1642845},
+    {lote:"G-6",nombre:"Kirschenbaum, Hector y Veronica",deuda:1642845},
+    {lote:"G-9",nombre:"Lopez, Fernando - Chamson, Axel",deuda:0},
+    {lote:"G-10",nombre:"Lopez, Fernando y Beleira, Norma - Chamson, Axel",deuda:0},
+    {lote:"G-11",nombre:"Armiento de Chamson",deuda:0},
+    {lote:"G-12",nombre:"Lago, Marcela",deuda:0},
+    {lote:"G-13",nombre:"Gimenez Natale, M. Ines",deuda:0},
+    {lote:"G-14",nombre:"Ottonello, Miguel A.",deuda:0},
+    {lote:"G-16",nombre:"Fragale, Guillermo",deuda:0},
+    {lote:"G-17",nombre:"Imas, Luis Alberto",deuda:1434845},
+    {lote:"H-1",nombre:"Facino, Ivana Carina",deuda:208000},
+    {lote:"H-7",nombre:"Alvarez, Francisco",deuda:1642845},
+    {lote:"H-10",nombre:"Sabile, Diego Javier",deuda:0},
+    {lote:"H-12",nombre:"Paz, Ignacio Mario",deuda:0},
+    {lote:"H-13",nombre:"Graziano, Gabriel",deuda:0},
+    {lote:"H-17",nombre:"Colombo, Nicolas",deuda:216320},
+    {lote:"H-18",nombre:"Colombo, Nicolas",deuda:208000},
+    {lote:"I-1",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:0},
+    {lote:"I-2",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:1642845},
+    {lote:"I-3",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:1642845},
+    {lote:"I-4",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:1642845},
+    {lote:"I-6",nombre:"Thibaud, Maximo Pedro",deuda:1642845},
+    {lote:"I-7",nombre:"Thibaud, Maximo Pedro",deuda:1642845},
+    {lote:"I-10",nombre:"Palla, Federico y Manzelli, Natacha",deuda:0},
+    {lote:"I-11",nombre:"Imas, Luis Alberto",deuda:918595},
+    {lote:"I-12",nombre:"Tutina SA",deuda:0},
+    {lote:"I-13",nombre:"Isabella, Diego",deuda:0},
+    {lote:"I-15",nombre:"Valle, Oscar Raul y Marina",deuda:0},
+    {lote:"I-16",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"I-17",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"I-18",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"J-1",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:0},
+    {lote:"J-2",nombre:"Iturburu, Juan y Sartori M. Clemencia",deuda:0},
+    {lote:"J-4",nombre:"Novillo Almada, Facundo",deuda:0},
+    {lote:"J-5",nombre:"Tutina SA",deuda:0},
+    {lote:"J-6",nombre:"Isabella, Sebastian",deuda:0},
+    {lote:"J-7",nombre:"Cazenave, Bernardo y Fernandez Nogues, Maria G.",deuda:1642845},
+    {lote:"J-8",nombre:"Morales, Adriana Marcela",deuda:0},
+    {lote:"J-10",nombre:"Gioviazzo, Laura",deuda:1642845},
+    {lote:"J-11",nombre:"Palpacelli, Carlos Ariel",deuda:516250},
+    {lote:"K-1",nombre:"Vaca, Mario Gustavo",deuda:1642845},
+    {lote:"K-2",nombre:"Acuña, Hector Javier",deuda:0},
+    {lote:"K-3",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"K-4",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"K-6",nombre:"Salaberry de Escayola, Virginia",deuda:0},
+    {lote:"K-7",nombre:"Salaberry de Escayola, Virginia",deuda:0},
+    {lote:"K-8",nombre:"Wilson, Ines del Campo",deuda:1642845},
+    {lote:"L-1",nombre:"Brun M. Josefina y Brun Tomas",deuda:0},
+    {lote:"L-8",nombre:"Brave, Marcelo",deuda:759581},
+    {lote:"L-9",nombre:"Brave, Marcelo",deuda:759581},
+    {lote:"L-10",nombre:"Imas, Luis Alberto",deuda:1642845},
+    {lote:"L-11",nombre:"Imas, Luis Alberto",deuda:1642845},
+    {lote:"L-12",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"L-14",nombre:"Sabile, Diego Javier",deuda:0},
+    {lote:"M-1",nombre:"Lopez, Fernando y Beleira, Norma Beatriz",deuda:0},
+    {lote:"M-2",nombre:"Palla Federico y Manzelli Natacha",deuda:0},
+    {lote:"M-4",nombre:"Letang, Gabriel Dario",deuda:0},
+    {lote:"M-5",nombre:"Woinilowicz, Jorge Eduardo",deuda:1642845},
+    {lote:"M-6",nombre:"Garcia, Carlos Alberto",deuda:1642845},
+    {lote:"M-12",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"M-13",nombre:"Vazquez, Roberto Gustavo",deuda:1642845},
+    {lote:"M-14",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"M-15",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"M-16",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"M-17",nombre:"Papacelli, Carlos Ariel",deuda:516250},
+    {lote:"N-6",nombre:"Coffey, Santiago Eduardo",deuda:1642845},
+    {lote:"N-8",nombre:"Fidel, Sara",deuda:0},
+    {lote:"N-9",nombre:"Chamson, Axel",deuda:0},
+    {lote:"N-11",nombre:"Jasminoy, Ignacio",deuda:216320},
+    {lote:"N-12",nombre:"Jasminoy, Hector Iseo",deuda:216320},
+    {lote:"N-14",nombre:"Graziano, Gabriel",deuda:0},
+    {lote:"N-15",nombre:"Villavicencio, Juan Martin",deuda:1642845},
+    {lote:"O-3",nombre:"Calderon Oña, Juan Carlos",deuda:0},
+    {lote:"O-4",nombre:"Tello, German",deuda:0},
+    {lote:"O-5",nombre:"Goldschtein, Javier",deuda:339593},
+    {lote:"O-6",nombre:"Diaz, Paula Mariana",deuda:1642845},
+    {lote:"O-7",nombre:"Weiss, Vernon Roy",deuda:0},
+    {lote:"O-8",nombre:"Bunge, Diego",deuda:1642845},
+    {lote:"Q-2",nombre:"Segovia, Diego",deuda:0},
+    {lote:"Q-4",nombre:"Casaux Alsina, Santiago",deuda:0},
+    {lote:"Q-6",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"Q-57",nombre:"Garibaldi, Osvaldo",deuda:1434845},
+    {lote:"Y-9",nombre:"Garat de Langhe, Maximo",deuda:0},
+    {lote:"Y-11",nombre:"Candiotti, Florencia",deuda:0},
+    {lote:"Y-22",nombre:"Sojo, Ernesto Tomas",deuda:1642845},
+    {lote:"Y-25",nombre:"Caputo, Monica Maria",deuda:1642845},
+    {lote:"Y-26",nombre:"Vazquez, Roberto Gustavo",deuda:1642845},
+    {lote:"Y-27",nombre:"Malvicchini, Enrique Francisco",deuda:0},
+    {lote:"Y-28",nombre:"Acevedo de Lucchia Puig, Florencia",deuda:1642845},
+    {lote:"Y-29",nombre:"Bunge, Diego",deuda:1642845},
+    {lote:"Y-30",nombre:"Woinilowicz, Jorge Eduardo",deuda:1642845},
+    {lote:"Y-32",nombre:"Blanco, Jorge Osvaldo",deuda:0},
+    {lote:"Y-35",nombre:"Barciela, Norberto y Gambin, Graciela",deuda:1642845},
+    {lote:"Y-36",nombre:"Alvarez, Francisco",deuda:1642845},
+    {lote:"Y-37",nombre:"Pujol, Flavio Luis",deuda:1642845},
+    {lote:"Y-38",nombre:"Puletti, Alberto",deuda:0},
+    {lote:"Y-39",nombre:"Aguilera, Omar Ariel",deuda:216320},
+    {lote:"Z-24",nombre:"Noseda, Claudia Maria Josefina",deuda:1642845},
+    {lote:"Z-28",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"Z-29",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"Z-30",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"Z-31",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"Z-32",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"Z-39",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"AC-2",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
+    {lote:"AC-3",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
+    {lote:"AC-4",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
+    {lote:"AC-5",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
+    {lote:"AC-6",nombre:"Farias, Daniel Duilio y Messio Gladys",deuda:0},
+    {lote:"AC-15",nombre:"Vazquez, Roberto Gustavo",deuda:1642845},
+    {lote:"AC-16",nombre:"Caputo, Jose Luis",deuda:1642845},
+    {lote:"AC-17",nombre:"Caputo, Monica Maria",deuda:1642845},
+    {lote:"AD-3",nombre:"Loybaco SA - Horacio Lanusse",deuda:1642845},
+    {lote:"AD-4",nombre:"Saponare, Pablo",deuda:1642845},
+    {lote:"AD-5",nombre:"Flucks, Gladys Mariana",deuda:1642845},
+    {lote:"AD-6",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"AD-8",nombre:"Caputo, Jorge Antonio Nicolas",deuda:1642845},
+    {lote:"AD-9",nombre:"Caputo, Nicolas Martin",deuda:1642845},
+    {lote:"AE-3",nombre:"Najo, Susana",deuda:0}
+  ]
+};
+
+var CC_CURRENT = CC_AGO26;
 
 var NOTICES = [
   {
@@ -1427,6 +1634,70 @@ var NOTICES = [
 ];
 
 var MESES = {
+  ago26:{id:"ago26",mes:"Agosto",anio:"2026",vto:"15/09/2026",periodo:"1 al 31/08/2026",status:"ok",badge:"Cerrado",
+    saldoInicial:30332.40,
+    docs:[
+      {label:"Liquidación Agosto 2026 (PDF)",href:AGO_2026_PDFS.liquidacion,primary:true},
+      {label:"Estado de cuenta propietarios (PDF)",href:AGO_2026_PDFS.estado}
+    ],
+    egresos:{
+      sueldos:{label:"Sueldos y aportes al personal",items:[
+        ["Cano, Rodolfo","Fc. 001-0014",1033400],["Heflein, Gaston","Fc. 001-0008",1033400],
+        ["Jara, Julio E.","Fc. 001-0053",1033400],["Leiva, Miguel Angel","Fc. 001-0091",1750000],
+        ["Honorarios administracion","Transferencia",3500000]]},
+      monotributo:{label:"Aportes Monotributo",items:[
+        ["Cano, Rodolfo","Monotributo 08-26",56379.08],["Heflein, Gaston","Monotributo 08-26",75099.08],
+        ["Jara, Julio E.","Monotributo 08-26",49527.18],["Leiva, Miguel Angel","Monotributo 08-26",84612.93]]},
+      seguros:{label:"Seguros",items:[
+        ["Seguro Responsabilidad Civil 6/11","Poliza nro. 271754",55584.40]]},
+      mantenimientos:{label:"Abonos por mantenimientos",items:[
+        ["Mantenimiento parques y jardines","Efectivo s/f",20000000],["Soda Belen SRL","Transferencia",60800],
+        ["Mayra Baño Quimico","Transferencia",60000],["Celular administracion","Fc. 1340-09694348",8810],
+        ["Abono web virtual","Transferencia",196563]]},
+      otros:{label:"Otros mantenimientos y reparaciones",items:[
+        ["Nafta y copias","",34999.76],["Arreglo moto recoleccion residuios","",330000]]},
+      edenor:{label:"Impuestos y servicios",items:[
+        ["Ecoterra","Rbo.1900-000756",373200],["Cosefa","Fc. 015-000771",11640.58],
+        ["Edenor AP1","Cta. 5176834871",96384.53],["Edenor AP2","Cta. 1879443257",8645.52],
+        ["Edenor AP3","Cta. 2858919000",120687.26],["Edenor CH","Cta. 1962427174",188796.81],
+        ["Edenor POR","Cta. 6146537920",603419.99],["Edenor SS","Cta. 7056963671",52750.04]]}
+    },
+    ingresos:[
+      ["Garcia, Santiago","C43 H12",400000],["Fragale, Guillermo","G16",200000],
+      ["Blanco, Jorge","Y32",200000],["Puletti, Alberto","Y38",200000],
+      ["Pastore, Luis","A26",200000],["Manzelli, Natacha","I10 M02",400000],
+      ["Gardey, Ricardo","E18",200000],["Jasminoy, Ignacio","C15 N11 N12",624000],
+      ["Graziano, Gabriel","H13 N14",400000],["Cacios, Jorge","B13",200000],
+      ["Najo, Susana","F08 F09 F10 AE03",800000],
+      ["Palpacelli, Carlos","A10 A11 A12 B07 B09 D02 J11 L12 M15 M16 M17",2200000],
+      ["Rotaeche, Luis","F21",200000.21],["Rotaeche, Luis","F14",200000],
+      ["Figueroa V., Julio","B16",400000],["Novillo, Facundo","J04",200000],
+      ["Stabile, Diego","L14",200000],["Lastra, Victoria","E03",200000],
+      ["Nogues, Martin","E17",200000],["Tello, German","O04",200000],
+      ["Garat, Maximo","Y09",200000],["Gassner, Nicole","H10",200000],
+      ["Weiss, Vernon","O07",200000],["Brun, Joaquin","F02 L01",800000],
+      ["Lopez, Fernando","G10 M01",400000],["Melingini, Claudio","J08",200000],
+      ["Calderon Oña, Juan C.","O03",200000],["Letang, Gabriel","M04",200000],
+      ["Aldanondo, Matias","A02",200000],["Tutina SA","I12 I13 J05 J06",800000],
+      ["Fernandez, Ricardo","B08",200000],["Marquez, Andrea","C47",200000],
+      ["Stabile, Mauro","F11 F12 F13",600000],["Valle, Marina","I15",200000],
+      ["Acuña, Hector","K02",200000],["Ottonello, Miguel","G13 G14",400000],
+      ["Novillo, Facundo","J04",400000],["Chamson, Axel","G09 G11 N09",600000],
+      ["Greco, Hugo","F19",400000],["Garibaldi, Osvaldo","A01 F06 Q57",600000],
+      ["Castellarin, Gladys","C04",633331],
+      ["Iturburu, Juan Pedro","E05 E06 I01 J01 J02",1000000],
+      ["Candiotti, Florencia","Y11",200000],["Malvichini, Andres","Y27",600000],
+      ["Lubnicki, Roberto","D20",200000],["Lago, Marcela","G12",400000],
+      ["Aon, Jeanette","LOTE S/IDENTIFICAR",200000],["Fidel, Adriana","N08",200000],
+      ["Casaux Alsina, Santiago","Q04",200000],["Quintana, Juan M.","B01",200000],
+      ["Brave, Marcelo","D05 D06 L08 L09",800000],["Farias, Daniel","AC02 AC03 AC04 AC05 AC06",1000000],
+      ["Beloli, Hugo","B02",100000],["Goñi, Uki","Q02",1100000],
+      ["Imas, Luis","H10",200000],["Regis, Pablo","K06 K07",800000],
+      ["Garat, Juan M. / Gaston","G17 I11",800000],["Aguilera, Omar","G01",376000],
+      ["Segovia, Diego","C48 C49",400000],["Stabile, Diego","Y39",200000],
+      ["Aporte / prestamo desarrollador","",6160000]
+    ]
+  },
   jul26:{id:"jul26",mes:"Julio",anio:"2026",vto:"15/08/2026",periodo:"1 al 31/07/2026",status:"ok",badge:"Cerrado",
     saldoInicial:1379901.80,
     docs:[
@@ -1888,7 +2159,7 @@ var EXPENSE_MONTHS = [
 
 var lineChart;
 var expenseChart;
-var HOME_MONTH_KEYS = ['dic25', 'ene26', 'feb26', 'mar26', 'abr26', 'may26', 'jun26', 'jul26'];
+var HOME_MONTH_KEYS = ['ene26', 'feb26', 'mar26', 'abr26', 'may26', 'jun26', 'jul26', 'ago26'];
 var trendData = {
   labels:[],
   egresos:[],
@@ -2068,7 +2339,7 @@ function buildAprilExpenseBreakdown(){
 
 function renderHomeDashboard(){
   var months = buildTrendData();
-  var junio = getMonthSummary('jul26');
+  var junio = getMonthSummary('ago26');
   var totalEgresos = months.reduce(function(sum, item){ return sum + item.egresos; }, 0);
   var totalIngresos = months.reduce(function(sum, item){ return sum + item.ingresos; }, 0);
   var lotesAlDia = CC_CURRENT.lotes.filter(function(item){ return item.deuda === 0; }).length;
@@ -2105,7 +2376,7 @@ function renderHomeDashboard(){
 function renderLiquidationCards(){
   var root = document.getElementById('mgrid');
   if (!root) return;
-  var keys = ['jul26', 'jun26', 'may26', 'abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
+  var keys = ['ago26', 'jul26', 'jun26', 'may26', 'abr26', 'mar26', 'feb26', 'ene26', 'dic25'];
   root.innerHTML = keys.map(function(key){
     var d = MESES[key];
     var egr = ce(d);
