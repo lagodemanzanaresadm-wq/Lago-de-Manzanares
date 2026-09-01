@@ -1,5 +1,9 @@
 'use strict';
 
+var AGO_2026_PDFS = {
+  carta:'assets/docs/ago-2026/carta-gastos-administrativos-agosto-2026.pdf'
+};
+
 var JUL_2026_PDFS = {
   carta:'assets/docs/jul-2026/carta-gastos-administrativos-julio-2026.pdf',
   liquidacion:'assets/docs/jul-2026/liquidacion-gastos-julio-2026.pdf',
@@ -35,6 +39,26 @@ var PAGE_TITLES = {
 };
 
 var LIQUIDACIONES = [
+  {
+    id:'gm26ago',
+    title:'Carta de Gastos Adm. - Liquidación Agosto 2026',
+    date:'Buenos Aires, 1 de septiembre de 2026',
+    due:'Venc. 15/09/2026',
+    amount:'$ 300.000',
+    status:'Vigente',
+    bodyHtml:'<div class="letter-content">' +
+      '<div class="letter-kicker">Estimados propietarios:</div>' +
+      '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de agosto, con vencimiento el día 15 de septiembre de 2026.</p>' +
+      '<p>En los archivos adjuntos encontrarán la siguiente documentación:</p>' +
+      '<ul><li>Liquidación correspondiente al período agosto 2026.</li><li>Estado de cuenta de propietarios.</li><li>Informe avances de obra agosto 2026.</li></ul>' +
+      '<div class="letter-highlight"><strong>Importe Agosto 2026</strong>$ 300.000 — trescientos mil pesos</div>' +
+      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria — <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: <a href="mailto:lagodemanzanares.adm@gmail.com">lagodemanzanares.adm@gmail.com</a><br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
+      '<div class="letter-highlight"><strong>Acreditaciones por identificar</strong>Fecha: 2026-08-18 — Importe: $200.000 — JEANETTE AON</div>' +
+      '<div class="letter-highlight"><strong>Importante</strong>Se solicita a los propietarios que mantengan deudas pendientes con ARBA que regularicen su situación a la mayor brevedad, teniendo en cuenta que dichas deudas pueden derivar en instancias judiciales, embargos y dificultades para realizar futuras transferencias o trámites de escrituración. En el Portal de Administración encontrarán el listado de las partidas correspondientes a los lotes de Zona Norte. Los pagos realizados fuera de término devengarán un interés por mora del 4% mensual, que se aplicará hasta la cancelación total de la deuda.</div>' +
+      '<div class="doc-actions"><a class="doc-action primary" href="' + AGO_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
   {
     id:'gm26jul',
     title:'Carta de Gastos Adm. - Liquidación Julio 2026',
