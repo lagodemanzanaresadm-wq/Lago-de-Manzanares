@@ -45,7 +45,7 @@ var LIQUIDACIONES = [
     date:'Buenos Aires, 1 de septiembre de 2026',
     due:'Venc. 15/09/2026',
     amount:'$ 300.000',
-    status:'Vigente',
+    status:'Cerrado',
     bodyHtml:'<div class="letter-content">' +
       '<div class="letter-kicker">Estimados propietarios:</div>' +
       '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de agosto, con vencimiento el día 15 de septiembre de 2026.</p>' +
