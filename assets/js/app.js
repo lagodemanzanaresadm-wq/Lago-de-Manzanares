@@ -1286,6 +1286,20 @@ var CC_CURRENT = CC_AGO26;
 
 var NOTICES = [
   {
+    id:'cavance_ago26',
+    title:'Informe Mensual de Trabajos - Agosto 2026',
+    date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
+    tag:'Informe de avance de obras',
+    pdfHref:'assets/docs/notices/zanara-informe-obra-agosto-2026.pdf',
+    desc:'Obras en ejecución y obras previstas — Etapas Norte y Sur. Agosto 2026.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Informe de avance de obras</span>' +
+      '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Agosto 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
+      '<p>El informe cubre obras en ejecución y obras previstas en las Etapas Norte y Sur del barrio.</p>' +
+      '<div class="doc-actions"><a class="doc-action primary" href="assets/docs/notices/zanara-informe-obra-agosto-2026.pdf" target="_blank" rel="noopener">Ver informe completo PDF</a></div>' +
+    '</div>'
+  },
+  {
     id:'cavance_jul26',
     title:'Informe Mensual de Trabajos - Julio 2026',
     date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
