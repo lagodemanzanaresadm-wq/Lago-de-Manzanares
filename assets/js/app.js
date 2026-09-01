@@ -3,7 +3,7 @@
 var AGO_2026_PDFS = {
   carta:'assets/docs/ago-2026/carta-gastos-administrativos-agosto-2026.pdf',
   liquidacion:'assets/docs/ago-2026/liquidacion-gastos-agosto-2026.pdf',
-  estado:'assets/docs/ago-2026/estado-de-cuenta-propietarios-agosto-2026.pdf'
+  estado:'assets/docs/ago-2026/estado-de-cuenta-propietarios-agosto-2026.pdf?v=2'
 };
 
 var JUL_2026_PDFS = {
