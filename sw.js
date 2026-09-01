@@ -1,4 +1,4 @@
-const CACHE = 'ldm-v4';
+const CACHE = 'ldm-v5';
 const ASSETS = [
   '/Lago-de-Manzanares/',
   '/Lago-de-Manzanares/index.html',
