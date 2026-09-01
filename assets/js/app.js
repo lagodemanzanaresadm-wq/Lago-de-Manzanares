@@ -1286,6 +1286,24 @@ var CC_CURRENT = CC_AGO26;
 
 var NOTICES = [
   {
+    id:'arba_ago26',
+    title:'Partidas ARBA',
+    date:'Administración',
+    tag:'Impuestos',
+    pdfHref:'assets/docs/notices/partidas-arba-julio-2026.pdf?v=2',
+    desc:'Partidas correspondientes a ARBA de cada lote. Instrucciones para consultar y regularizar la situación ante ARBA.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Impuestos</span>' +
+      '<div class="letter-kicker">Estimados propietarios:</div>' +
+      '<p>Adjuntamos las partidas correspondientes a <strong>ARBA</strong> de cada lote, junto con el instructivo para consultar y/o regularizar la situación impositiva ante el organismo.</p>' +
+      '<div class="doc-actions">' +
+        '<a class="doc-action primary" href="assets/docs/notices/partidas-arba-julio-2026.pdf?v=2" target="_blank" rel="noopener">Ver partidas ARBA PDF</a>' +
+        '<a class="doc-action" href="assets/docs/notices/instructivo-pago-arba-junio-2026.pdf" target="_blank" rel="noopener">Instructivo pago ARBA PDF</a>' +
+      '</div>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+    '</div>'
+  },
+  {
     id:'cavance_ago26',
     title:'Informe Mensual de Trabajos - Agosto 2026',
     date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
@@ -1311,24 +1329,6 @@ var NOTICES = [
       '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Julio 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
       '<p>El informe cubre obras en ejecución y obras previstas en las Etapas Norte y Sur del barrio.</p>' +
       '<div class="doc-actions"><a class="doc-action primary" href="assets/docs/notices/zanara-informe-obra-julio-2026.pdf" target="_blank" rel="noopener">Ver informe completo PDF</a></div>' +
-    '</div>'
-  },
-  {
-    id:'arba_jun26',
-    title:'Partidas ARBA',
-    date:'Administración',
-    tag:'Impuestos',
-    pdfHref:'assets/docs/notices/partidas-arba-julio-2026.pdf?v=2',
-    desc:'Partidas correspondientes a ARBA de cada lote. Instrucciones para consultar y regularizar la situación ante ARBA.',
-    bodyHtml:'<div class="letter-content">' +
-      '<span class="notice-tag">Impuestos</span>' +
-      '<div class="letter-kicker">Estimados propietarios:</div>' +
-      '<p>Adjuntamos las partidas correspondientes a <strong>ARBA</strong> de cada lote, junto con el instructivo para consultar y/o regularizar la situación impositiva ante el organismo.</p>' +
-      '<div class="doc-actions">' +
-        '<a class="doc-action primary" href="assets/docs/notices/partidas-arba-julio-2026.pdf?v=2" target="_blank" rel="noopener">Ver partidas ARBA PDF</a>' +
-        '<a class="doc-action" href="assets/docs/notices/instructivo-pago-arba-junio-2026.pdf" target="_blank" rel="noopener">Instructivo pago ARBA PDF</a>' +
-      '</div>' +
-      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
     '</div>'
   },
   {
