@@ -53,7 +53,7 @@ var LIQUIDACIONES = [
     date:'Buenos Aires, 1 de octubre de 2026',
     due:'Venc. 15/10/2026',
     amount:'$ 300.000',
-    status:'Vigente',
+    status:'Cerrado',
     bodyHtml:'<div class="letter-content">' +
       '<div class="letter-kicker">Estimados propietarios:</div>' +
       '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de septiembre, con vencimiento el día 15 de octubre de 2026.</p>' +
@@ -1872,7 +1872,7 @@ var NOTICES = [
 ];
 
 var MESES = {
-  sep26:{id:"sep26",mes:"Septiembre",anio:"2026",vto:"15/10/2026",periodo:"1 al 30/09/2026",status:"ok",badge:"Vigente",
+  sep26:{id:"sep26",mes:"Septiembre",anio:"2026",vto:"15/10/2026",periodo:"1 al 30/09/2026",status:"ok",badge:"Cerrado",
     saldoInicial:5563.45,
     docs:[
       {label:"Liquidación Septiembre 2026 (PDF)",href:SEP_2026_PDFS.liquidacion,primary:true},
