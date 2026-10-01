@@ -2,7 +2,7 @@
 
 var SEP_2026_PDFS = {
   carta:'assets/docs/sep-2026/carta-gastos-administrativos-septiembre-2026.pdf',
-  liquidacion:'assets/docs/sep-2026/liquidacion-gastos-septiembre-2026.pdf',
+  liquidacion:'assets/docs/sep-2026/liquidacion-gastos-septiembre-2026-v2.pdf',
   estado:'assets/docs/sep-2026/estado-cuenta-propietarios-septiembre-2026.pdf'
 };
 
