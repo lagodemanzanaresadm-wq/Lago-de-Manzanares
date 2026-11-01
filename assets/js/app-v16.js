@@ -58,19 +58,20 @@ var LIQUIDACIONES = [
     title:'Carta de Gastos Adm. - Liquidación Octubre 2026',
     date:'Buenos Aires, 2 de noviembre de 2026',
     due:'Venc. 15/11/2026',
-    amount:'$ 150.000',
+    amount:'$ 300.000',
     status:'Cerrado',
     bodyHtml:'<div class="letter-content">' +
       '<div class="letter-kicker">Estimados propietarios:</div>' +
       '<p>Por medio de la presente, nos dirigimos a ustedes a fin de acercarles la liquidación correspondiente al mes de octubre, con vencimiento el día 15 de noviembre de 2026.</p>' +
+      '<p>Les compartimos el enlace al Portal de Administración, donde podrán consultar liquidaciones históricas, comunicaciones enviadas, datos de pago y canales de contacto:</p>' +
+      '<p><a href="https://lagodemanzanaresadm-wq.github.io/Lago-de-Manzanares/" target="_blank" rel="noopener" style="color:var(--accent-2,#1e4070)">Portal Administración → https://lagodemanzanaresadm-wq.github.io/Lago-de-Manzanares/</a></p>' +
       '<p>En los archivos adjuntos encontrarán la siguiente documentación:</p>' +
       '<ul><li>Liquidación correspondiente al período octubre 2026.</li><li>Estado de cuenta de propietarios.</li></ul>' +
-      '<div class="letter-highlight" style="background:var(--green-bg,#f0f7f0);border-color:var(--green-border,#4a9e5c);border-left-color:var(--green-border,#4a9e5c)"><strong style="color:var(--green-border,#4a9e5c)">Bonificación por servicios pendientes</strong>El importe de los gastos administrativos es de $ 300.000 mensuales. Dado que los servicios en los lotes aún no se encuentran completamente habilitados, se aplica una bonificación del 50% mientras subsista esa situación. <strong>Importe a abonar: $ 150.000</strong></div>' +
-      '<div class="letter-highlight"><strong>Importe Octubre 2026</strong>$ 150.000 — pesos ciento cincuenta mil</div>' +
-      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria — <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: lagodemanzanares.adm@gmail.com<br>Una vez realizada la transferencia, solicitamos enviar el comprobante de pago indicando el número de lote correspondiente para su correcta imputación.</div>' +
-      '<div class="letter-highlight"><strong>Importante</strong>Es importante que cada propietario revise y regularice las obligaciones de ARBA correspondientes a su lote. Actualmente se encuentra vigente una moratoria con bonificaciones de hasta el 40%. Los pagos realizados fuera de término devengarán un interés por mora del 4% mensual.</div>' +
+      '<div class="letter-highlight"><strong>Importe Octubre 2026</strong>$ 300.000 — Pesos trescientos mil</div>' +
+      '<div class="letter-payment"><strong>Forma de pago:</strong> Transferencia bancaria — <strong>Banco Ciudad</strong><br>CBU: 0290052010000571246961 | Alias: TRONCO.CIFRA.COATI<br>Email: lagodemanzanares.adm@gmail.com<br>Una vez realizada la transferencia, solicitamos enviar el comprobante indicando el número de lote correspondiente, para permitir su correcta identificación e imputación.</div>' +
+      '<div class="letter-highlight"><strong>Importante</strong>Es importante que cada propietario revise y regularice las obligaciones de ARBA correspondientes a su lote. Para facilitar esta consulta, el Portal de Administración cuenta con un archivo que reúne el detalle de las partidas de Zona Norte. Actualmente se encuentra vigente una moratoria que permite acceder a planes de pago para ponerse al día con las deudas pendientes.<br><br>Les recordamos que los pagos efectuados fuera de término generan intereses por mora del 4% mensual, que continúan acumulándose hasta la cancelación del saldo adeudado.<br><br>Como siempre, estamos a disposición para responder cualquier consulta y brindarles la información que necesiten.</div>' +
       '<div class="doc-actions"><a class="doc-action primary" href="' + OCT_2026_PDFS.carta + '" target="_blank" rel="noopener">Abrir carta PDF</a></div>' +
-      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong></div>' +
+      '<div class="letter-signature">Atentamente,<br><strong>Administración Lago de Manzanares</strong><br>lagodemanzanares.adm@gmail.com · Cel. 11 7646 2020</div>' +
     '</div>'
   },
   {
