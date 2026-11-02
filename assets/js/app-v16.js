@@ -1775,6 +1775,20 @@ var NOTICES = [
     '</div>'
   },
   {
+    id:'cavance_oct26',
+    title:'Informe Mensual de Trabajos - Octubre 2026',
+    date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
+    tag:'Informe de avance de obras',
+    pdfHref:'assets/docs/oct-2026/zanara-informe-octubre-2026.pdf',
+    desc:'Obras en ejecución y obras previstas — Etapas Norte y Sur. Octubre 2026.',
+    bodyHtml:'<div class="letter-content">' +
+      '<span class="notice-tag">Informe de avance de obras</span>' +
+      '<p>A continuación se presenta el informe mensual de trabajos en el Barrio Lago de Manzanares correspondiente al mes de <strong>Octubre 2026</strong>, elaborado por <strong>ZANARA - Desarrollo y Gerenciamiento de Construcción</strong>.</p>' +
+      '<p>El informe cubre obras en ejecución y obras previstas en las Etapas Norte y Sur del barrio.</p>' +
+      '<div class="doc-actions"><a class="doc-action primary" href="assets/docs/oct-2026/zanara-informe-octubre-2026.pdf" target="_blank" rel="noopener">Ver informe completo PDF</a></div>' +
+    '</div>'
+  },
+  {
     id:'cavance_sep26',
     title:'Informe Mensual de Trabajos - Septiembre 2026',
     date:'ZANARA - Desarrollo y Gerenciamiento de Construcción',
